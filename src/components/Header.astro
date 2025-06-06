@@ -1,20 +1,20 @@
 ---
 const allPages = [
-  { text: "Home", url: "/Mep_Mep_Riders_web/" },
-  { text: "Features", url: "/features" },
-  { text: "Pricing", url: "/pricing" },
-  { text: "FAQ", url: "/faqs" },
-  { text: "Changelog", url: "/changelog" },
-  { text: "Integrations", url: "/integrations" },
-  { text: "Blog", url: "/blog" },
-  { text: "Case Studies", url: "/case-study" },
-  { text: "About Us", url: "/company" },
-  { text: "Careers", url: "/career" },
-  { text: "Contact", url: "/contact" },
-  { text: "Reviews", url: "/reviews" },
-  { text: "Privacy Policy", url: "/privacy-policy" },
-  { text: "Terms of Service", url: "/terms-conditions" },
-  { text: "404 Page", url: "/404" }
+  { text: "Inicio", url: "/Mep_Mep_Riders_web/" },
+  { text: "M1 - Automatizacion e industria 4.0", url: "/Mep_Mep_Riders_web/features" },
+  { text: "M2 - Gestion de producción", url: "/Mep_Mep_Riders_web/pricing" },
+  { text: "M3 - Planeación de proyecto", url: "/Mep_Mep_Riders_web/faqs" },
+  { text: "M4 - Evaluación economica del proyecto", url: "/Mep_Mep_Riders_web/changelog" },
+  { text: "M5 - Celdas de manufactura robotizadas", url: "/Mep_Mep_Riders_web/integrations" },
+  { text: "M6 - Virtualización de fábrica", url: "/Mep_Mep_Riders_web/blog" },
+  { text: "M7 - Controladores industriales", url: "/Mep_Mep_Riders_web/case-study" },
+  { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Riders_web/company" },
+  { text: "Careers", url: "/Mep_Mep_Riders_web/career" },
+  { text: "Contact", url: "/Mep_Mep_Riders_web/contact" },
+  { text: "Reviews", url: "/Mep_Mep_Riders_web/reviews" },
+  { text: "Privacy Policy", url: "/Mep_Mep_Riders_web/privacy-policy" },
+  { text: "Terms of Service", url: "/Mep_Mep_Riders_web/terms-conditions" },
+  { text: "404 Page", url: "/Mep_Mep_Riders_web/404" }
 ];
 ---
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
@@ -38,11 +38,11 @@ const allPages = [
     </a>
     
     <nav class="hidden md:flex items-center space-x-8">
-      <a href="/Mep_Mep_Riders_web/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Home</a>
-      <a href="/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Features</a>
-      <a href="/pricing" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Pricing</a>
-      <a href="/blog" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Blog</a>
-      <a href="/contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contact</a>
+      <a href="/Mep_Mep_Riders_web/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Inicio</a>
+      <a href="/Mep_Mep_Riders_web//features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Presentación</a>
+      <a href="https://drive.google.com/drive/folders/1jodLiu_ruLzrdddjylT_wBacmvlO2wKx?usp=drive_link" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Drive</a>
+      <a href="https://github.com/APM-2025-1" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Repositorio</a>
+      <a href="/Mep_Mep_Riders_web//contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contáctenos</a>
       
       <!-- All Pages Dropdown -->
       <div x-data="{ open: false }" class="relative">
@@ -51,7 +51,7 @@ const allPages = [
           @click.away="open = false"
           class="flex items-center text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors"
         >
-          All Pages
+          Módulos
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
           </svg>
