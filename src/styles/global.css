@@ -40,6 +40,17 @@
   --color-accent-900: #02343f;
   --color-accent-950: #011e29;
 
+  --color-info-50:  #e9f8fd;
+  --color-info-100: #c9eefb;
+  --color-info-200: #a4e3f8;
+  --color-info-300: #76d4f4;
+  --color-info-400: #4fc3f7;
+  --color-info-500: #29b6f6;
+  --color-info-600: #199edc;
+  --color-info-700: #117fb2;
+  --color-info-800: #0c6084;
+  --color-info-900: #07425a;
+  --color-info-950: #032938;
 
   --color-warning-50:  #fff7e6;
   --color-warning-100: #ffe7b8;
