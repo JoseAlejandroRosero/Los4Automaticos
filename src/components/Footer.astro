@@ -3,6 +3,14 @@ const currentYear = new Date().getFullYear();
 
 const footerLinks = [
   {
+    title: "Recursos",
+    links: [
+      { text: "Presentación", url: "/Mep_Mep_Riders_web/presentacion" },
+      { text: "Contáctenos", url: "/Mep_Mep_Riders_web/contacto" },
+      { text: "Asignatura", url: "/Mep_Mep_Riders_web/asignatura" },
+    ]
+  },
+  {
     title: "Modulos",
     links: [
       { text: "M1 - Automatizacion e industria 4.0", url: "/Mep_Mep_Riders_web/m1-automatizacion-industria-4-0" },
@@ -14,36 +22,7 @@ const footerLinks = [
       { text: "M7 - Controladores industriales", url: "/Mep_Mep_Riders_web/m7-controladores-industriales" },
       { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Riders_web/m8-sistema-de-supervision-scada" }
     ]
-  }/*,
-  {
-    title: "Recursos",
-    links: [
-      { text: "Features", url: "/features" },
-      { text: "Pricing", url: "/pricing" },
-      { text: "FAQ", url: "/faqs" },
-      { text: "Changelog", url: "/changelog" },
-      { text: "Integrations", url: "/integrations" }
-    ]
-  },
-  {
-    title: "Resources",
-    links: [
-      { text: "Blog", url: "/blog" },
-      { text: "Case Studies", url: "/case-study" },
-      { text: "404 Page", url: "/404" }
-    ]
-  },
-  {
-    title: "Company",
-    links: [
-      { text: "About Us", url: "/company" },
-      { text: "Careers", url: "/career" },
-      { text: "Contact", url: "/contact" },
-      { text: "Reviews", url: "/reviews" },
-      { text: "Privacy Policy", url: "/privacy-policy" },
-      { text: "Terms of Service", url: "/terms-conditions" }
-    ]
-  }*/
+  }
 ];
 ---
 
@@ -79,18 +58,31 @@ const footerLinks = [
         </div>
       </div>
       
-      {footerLinks.map(column => (
-        <div>
-          <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
-          <ul class="space-y-2">
-            {column.links.map(link => (
-              <li>
-                <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">{link.text}</a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ))}
+      {footerLinks.map((column) => {
+        // Dividir los links en grupos de 4
+        const chunkedLinks = [];
+        for (let i = 0; i < column.links.length; i += 4) {
+          chunkedLinks.push(column.links.slice(i, i + 4));
+        }
+
+        return chunkedLinks.map((group, idx) => (
+          <div key={`${column.title}-${idx}`} class={idx > 0 ? "mt-10" : ""}>
+            {/* Mostrar el título solo en el primer grupo */}
+            {idx === 0 && (
+              <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
+            )}
+            <ul class="space-y-2">
+              {group.map((link) => (
+                <li key={link.url}>
+                  <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">
+                    {link.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ));
+      })}
     </div>
     
     <div class="border-t border-gray-800 pt-8 mt-8">
