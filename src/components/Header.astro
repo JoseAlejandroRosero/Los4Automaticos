@@ -1,20 +1,17 @@
 ---
 const allPages = [
-  { text: "Inicio", url: "/Mep_Mep_Riders_web/" },
-  { text: "M1 - Automatizacion e industria 4.0", url: "/Mep_Mep_Riders_web/features" },
-  { text: "M2 - Gestion de producción", url: "/Mep_Mep_Riders_web/pricing" },
-  { text: "M3 - Planeación de proyecto", url: "/Mep_Mep_Riders_web/faqs" },
-  { text: "M4 - Evaluación economica del proyecto", url: "/Mep_Mep_Riders_web/changelog" },
-  { text: "M5 - Celdas de manufactura robotizadas", url: "/Mep_Mep_Riders_web/integrations" },
-  { text: "M6 - Virtualización de fábrica", url: "/Mep_Mep_Riders_web/blog" },
-  { text: "M7 - Controladores industriales", url: "/Mep_Mep_Riders_web/case-study" },
-  { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Riders_web/company" },
-  { text: "Careers", url: "/Mep_Mep_Riders_web/career" },
+  { text: "M1 - Automatizacion e industria 4.0", url: "/Mep_Mep_Riders_web/m1-automatizacion-industria-4-0" },
+  { text: "M2 - Gestion de producción", url: "/Mep_Mep_Riders_web/m2-gestion-de-produccion" },
+  { text: "M3 - Planeación de proyecto", url: "/Mep_Mep_Riders_web/m3-planeacion-de-proyecto" },
+  { text: "M4 - Evaluación economica del proyecto", url: "/Mep_Mep_Riders_web/m4-evaluacion-economica-del-proyecto" },
+  { text: "M5 - Celdas de manufactura robotizadas", url: "/Mep_Mep_Riders_web/m5-celdas-de-manufactura-robotizadas" },
+  { text: "M6 - Virtualización de fábrica", url: "/Mep_Mep_Riders_web/m6-virtualizacion-de-fabrica" },
+  { text: "M7 - Controladores industriales", url: "/Mep_Mep_Riders_web/m7-controladores-industriales" },
+  { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Riders_web/m8-sistema-de-supervision-scada" },
+  { text: "Blog", url: "/Mep_Mep_Riders_web/Blog" },
   { text: "Contact", url: "/Mep_Mep_Riders_web/contact" },
-  { text: "Reviews", url: "/Mep_Mep_Riders_web/reviews" },
   { text: "Privacy Policy", url: "/Mep_Mep_Riders_web/privacy-policy" },
   { text: "Terms of Service", url: "/Mep_Mep_Riders_web/terms-conditions" },
-  { text: "404 Page", url: "/Mep_Mep_Riders_web/404" }
 ];
 ---
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
@@ -41,8 +38,8 @@ const allPages = [
       <!--
       <a href="/Mep_Mep_Riders_web/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Inicio</a>
       -->
-      <a href="/Mep_Mep_Riders_web/features" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Presentación</a>
-      <a href="/Mep_Mep_Riders_web/contact" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contáctenos</a>
+      <a href="/Mep_Mep_Riders_web/presentacion" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Presentación</a>
+      <a href="/Mep_Mep_Riders_web/contacto" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Contáctenos</a>
       <a href="/Mep_Mep_Riders_web/asignatura" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Asignatura</a>
       <a href="https://drive.google.com/drive/folders/1jodLiu_ruLzrdddjylT_wBacmvlO2wKx?usp=drive_link" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Drive</a>
       <a href="https://github.com/APM-2025-1" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Repositorio</a>
@@ -128,10 +125,12 @@ const allPages = [
           class="absolute top-16 right-4 w-48 py-2 bg-white dark:bg-secondary-900 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-hidden"
           x-cloak
         >
-          <a href="/features" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Features</a>
-          <a href="/pricing" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Pricing</a>
-          <a href="/blog" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Blog</a>
-          <a href="/contact" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contact</a>
+
+          <a href="/Mep_Mep_Riders_web/presentacion" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Presentación</a>
+          <a href="/Mep_Mep_Riders_web/contacto" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contáctenos</a>
+          <a href="/Mep_Mep_Riders_web/asignatura" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Asignatura</a>
+          <a href="https://drive.google.com/drive/folders/1jodLiu_ruLzrdddjylT_wBacmvlO2wKx?usp=drive_link" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Drive</a>
+          <a href="https://github.com/APM-2025-1" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Repositorio</a>
           
           <!-- Mobile All Pages Dropdown -->
           <button 
