@@ -24,6 +24,7 @@ const footerLinks = [
     ]
   }
 ];
+
 ---
 
 <footer class="bg-gray-900 text-white pt-16 pb-8">
@@ -65,14 +66,29 @@ const footerLinks = [
           chunkedLinks.push(column.links.slice(i, i + 4));
         }
 
-        return chunkedLinks.map((group, idx) => (
-          <div key={`${column.title}-${idx}`} class={idx > 0 ? "mt-10" : ""}>
-            {/* Mostrar el título solo en el primer grupo */}
-            {idx === 0 && (
-              <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
-            )}
-            <ul class="space-y-2">
-              {group.map((link) => (
+        return (
+          <div key={column.title}>
+            {/* Título siempre visible */}
+            <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
+
+            {/* Version para md+: grupos en columnas lado a lado */}
+            <div class="hidden md:flex md:space-x-10">
+              {chunkedLinks.map((group, idx) => (
+                <ul key={idx} class="space-y-2 flex-4 min-w-[180px] max-w-lg">
+                  {group.map((link) => (
+                    <li key={link.url}>
+                      <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">
+                        {link.text}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              ))}
+            </div>
+
+            {/* Versión para pantallas pequeñas: una sola columna */}
+            <ul class="block md:hidden space-y-2">
+              {column.links.map((link) => (
                 <li key={link.url}>
                   <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">
                     {link.text}
@@ -81,7 +97,7 @@ const footerLinks = [
               ))}
             </ul>
           </div>
-        ));
+        );
       })}
     </div>
     
