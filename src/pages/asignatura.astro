@@ -9,13 +9,12 @@ const team = [
     title: "Ubaldo García",
     description: {
       texto: "",
-      nombre: "",
       ocupacion: "Profesor Ocasional",
-      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
     },
     backTitle: "",
-    backDescription: "",
-    image: "",
+    backDescription: "Ingeniero Mecánico y Magíster de la Universidad Nacional de Colombia, con experiencia en gemelos digitales, control discreto y sistemas ciberfísicos aplicados a manufactura.",
+    image: "https://imgur.com/rnalrLl.jpeg",
     color: "primary"
   },
   {
@@ -23,11 +22,11 @@ const team = [
     description: {
       texto: "",
       ocupacion: "Profesor Titular",
-      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
     },
     backTitle: "",
     backDescription: "Graduado en Ingeniería Mecánica en la Universidad Nacional de Colombia Graduado en Ingeniería Electrónica en la Universidad Distrital Francisco José de Caldas Magister en Ingeniería - Automatización Industrial en la Universidad Nacional de Colombia. Doctor en Ciencias de Ingeniería Mecánica en la Universidade Federal do Rio de Janeiro. Coordinador del Grupo de Investigación en plataformas robóticas UN-Robot.",
-    image: "",
+    image: "https://imgur.com/mfiJI7g.png",
     color: "secondary"
   },
   {
@@ -35,11 +34,11 @@ const team = [
     description: {
       texto: "",
       ocupacion: "Profesor Titular",
-      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
     },
     backTitle: "",
     backDescription: "Doctor en Ingeniería (Dr.-Ing : Doktor der Ingenieurwissenschaften, Summa cum laude) de la Universidad de Kassel en Alemania. Magister en Materiales y Procesos de Fabricación y también Magister en Ciencias Económicas- área Industria y Tecnología. Realizó estudios de Control Automático en el Instituto de Tecnología de Kyushu, Japón.",
-    image: "",
+    image: "https://imgur.com/XHHoQyC.png",
     color: "accent"
   },
   {
@@ -47,11 +46,10 @@ const team = [
     description: {
       texto: "",
       ocupacion: "Profesor Titular",
-      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
     },
-    backTitle: "Título en el reverso",
-    backDescription: "Texto en el reverso",
-    image: "",
+    backTitle: "",
+    backDescription: "Experto en sistemas térmicos, HVAC, automatización, manufactura y mantenimiento hospitalario. Amplia experiencia en docencia universitaria en ingeniería y en gestión de proyectos técnicos bajo normativas estatales.",    image: "https://imgur.com/Mlh0DEn.png",
     color: "warning"
   },
   {
@@ -59,11 +57,11 @@ const team = [
     description: {
       texto: "",
       ocupacion: "Profesor Titular",
-      lugar: "de la facultad de Ingeniería - Universidad Nacional de Colombia – Sede Bogotá",
+      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
     },
-    backTitle: "Título en el reverso",
-    backDescription: "Texto en el reverso",
-    image: "",
+    backTitle: "",
+    backDescription: "Ingeniero Electrónico por la Universidad Nacional de Colombia y Magíster en Ciencia de Control e Ingeniería por la Universidad de Ciencia y Tecnología de Beijing. Tiene experiencia en automatización industrial, implementación de sistemas de control, HMI, SCADA, MES y soporte comercial en automatización.",
+    image: "https://imgur.com/zfCemwV.png",
     color: "primary"
   }
 ];
@@ -112,7 +110,7 @@ const team = [
                 {/* Cara frontal */}
                 <div class="absolute inset-0 backface-hidden">
                   <div class="card p-6 md:p-8 h-full flex flex-col items-center justify-center text-center">
-                    <div class={`w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-${person.color}-200 dark:border-${person.color}-800`}>
+                    <div class={`w-38 h-38 mx-auto mb-6 rounded-full overflow-hidden border-4 border-${person.color}-200 dark:border-${person.color}-800`}>
                       <img src={person.image} alt={person.title} class="w-full h-full object-cover" />
                     </div>
                     <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{person.title}</h3>
