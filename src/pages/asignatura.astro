@@ -3,100 +3,252 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
+
+const team = [
+  {
+    title: "Ubaldo García",
+    description: {
+      texto: "",
+      nombre: "",
+      ocupacion: "Profesor Ocasional",
+      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+    },
+    backTitle: "",
+    backDescription: "",
+    image: "",
+    color: "primary"
+  },
+  {
+    title: "Ricardo Ramírez ",
+    description: {
+      texto: "",
+      ocupacion: "Profesor Titular",
+      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+    },
+    backTitle: "",
+    backDescription: "Graduado en Ingeniería Mecánica en la Universidad Nacional de Colombia Graduado en Ingeniería Electrónica en la Universidad Distrital Francisco José de Caldas Magister en Ingeniería - Automatización Industrial en la Universidad Nacional de Colombia. Doctor en Ciencias de Ingeniería Mecánica en la Universidade Federal do Rio de Janeiro. Coordinador del Grupo de Investigación en plataformas robóticas UN-Robot.",
+    image: "",
+    color: "secondary"
+  },
+  {
+    title: "Carlos Julio Cortés",
+    description: {
+      texto: "",
+      ocupacion: "Profesor Titular",
+      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+    },
+    backTitle: "",
+    backDescription: "Doctor en Ingeniería (Dr.-Ing : Doktor der Ingenieurwissenschaften, Summa cum laude) de la Universidad de Kassel en Alemania. Magister en Materiales y Procesos de Fabricación y también Magister en Ciencias Económicas- área Industria y Tecnología. Realizó estudios de Control Automático en el Instituto de Tecnología de Kyushu, Japón.",
+    image: "",
+    color: "accent"
+  },
+  {
+    title: "Luis Miguel Méndez",
+    description: {
+      texto: "",
+      ocupacion: "Profesor Titular",
+      lugar: "de la facultad de Ingeniería  Universidad Nacional de Colombia  Sede Bogotá",
+    },
+    backTitle: "Título en el reverso",
+    backDescription: "Texto en el reverso",
+    image: "",
+    color: "warning"
+  },
+  {
+    title: "Eduardo Barrera Gualdron",
+    description: {
+      texto: "",
+      ocupacion: "Profesor Titular",
+      lugar: "de la facultad de Ingeniería - Universidad Nacional de Colombia – Sede Bogotá",
+    },
+    backTitle: "Título en el reverso",
+    backDescription: "Texto en el reverso",
+    image: "",
+    color: "primary"
+  }
+];
 ---
 
-<Layout title="Customer Reviews - Sassify">
+<Layout title="Mep Mep Riders | Asignatura" description="Proyecto Mep Mep Riders - UNAL 2025-S1 - Proyecto integrador de fabricación de vehículos eléctricos de dos ruedas">
   <Header />
   <main>
     <HeroSection 
-      title="Customer Reviews" 
-      highlightText="Reviews"
-      description="See what our customers are saying about their experience with Sassify."
+      title="Automatización de Procesos de Manufactura" 
+      highlightText="Automatización"
+      description="Automatización de Procesos de Manufactura es una asignatura disciplinar obligatoria de 3 créditos del programa de Ingeniería Mecatrónica de la Universidad Nacional de Colombia, sede Bogotá."
     />
-    
-    <section class="py-16 bg-white dark:bg-gray-800">
-      <div class="container-custom">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <!-- Review Card 1 -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700">
-            <div class="flex items-center mb-4">
-              <div class="shrink-0">
-                <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/32.jpg" alt="Sarah Johnson" />
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Sarah Johnson</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Marketing Director</p>
-              </div>
-            </div>
-            <div class="flex mb-4">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              "Sassify has completely transformed how we manage our marketing campaigns. The intuitive interface and powerful analytics have helped us increase our conversion rates by 35% in just three months."
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400">June 12, 2023</p>
-          </div>
-          
-          <!-- Review Card 2 -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700">
-            <div class="flex items-center mb-4">
-              <div class="shrink-0">
-                <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/men/45.jpg" alt="David Chen" />
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">David Chen</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">CTO, TechStart</p>
-              </div>
-            </div>
-            <div class="flex mb-4">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              "The API integration capabilities of Sassify are second to none. We were able to connect all our existing tools seamlessly, saving us countless development hours. Their support team is also incredibly responsive."
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400">May 3, 2023</p>
-          </div>
-          
-          <!-- Review Card 3 -->
-          <div class="card p-6 border border-gray-200 dark:border-gray-700">
-            <div class="flex items-center mb-4">
-              <div class="shrink-0">
-                <img class="h-12 w-12 rounded-full" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Rodriguez" />
-              </div>
-              <div class="ml-4">
-                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Emily Rodriguez</h3>
-                <p class="text-sm text-gray-600 dark:text-gray-400">Product Manager</p>
-              </div>
-            </div>
-            <div class="flex mb-4">
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-              <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
-            </div>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
-              "What I love most about Sassify is how it grows with our business. We started with the basic plan and as our needs expanded, the platform scaled perfectly with us. The onboarding process was smooth and the learning curve minimal."
-            </p>
-            <p class="text-sm text-gray-500 dark:text-gray-400">April 18, 2023</p>
-          </div>
-          
-          <!-- More review cards can be added here -->
+
+
+    <section class="relative overflow-hidden pt-24 md:pt-32 pb-16 md:pb-20">
+      <!-- Descripción del proyecto -->
+      <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            2025-S1
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Proyecto integrador</h2>
+          <p class="text-justify text-gray-600 dark:text-gray-300">
+            En el curso, los estudiantes abordan un proyecto integrador enfocado en resolver un problema real mediante la automatización para mejorar un proceso de manufactura. Este proyecto exige análisis, diseño y validación a nivel de ingeniería, fomentando el aprendizaje colaborativo. Para el periodo 2025-1S, el reto consiste en la fabricación de vehículos eléctricos de dos ruedas, incluyendo el análisis del proceso, evaluación de soluciones, simulación, y diseño y validación de la automatización.
+          </p>
         </div>
-        
-        <div class="mt-16 text-center">
-          <a href="/contact" class="btn-primary">Share Your Experience</a>
+    </section>
+    
+    <section class="section relative z-10 overflow-hidden py-12 md:py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Equipo docente</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            El curso es guiado por un equipo docente con amplia experiencia en automatización, manufactura y diseño de sistemas mecatrónicos. Su labor se centra en orientar y acompañar a los estudiantes en el desarrollo de los distintos módulos del curso.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          
+          <!-- Tarjetas 3D del equipo -->
+          {team.map((person) => (
+            <div class="feature-card perspective">
+              <div class="relative h-full transform-gpu transition-all duration-700 preserve-3d hover:rotate-y-180 cursor-pointer touch-action-card">
+
+                {/* Cara frontal */}
+                <div class="absolute inset-0 backface-hidden">
+                  <div class="card p-6 md:p-8 h-full flex flex-col items-center justify-center text-center">
+                    <div class={`w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-${person.color}-200 dark:border-${person.color}-800`}>
+                      <img src={person.image} alt={person.title} class="w-full h-full object-cover" />
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-900 dark:text-white">{person.title}</h3>
+                    <div class="text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                      <p>{person.description.ocupacion}</p>
+                      <p>{person.description.lugar}</p>
+                      <p>{person.description.texto}</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Cara trasera */}
+                <div class="absolute inset-0 backface-hidden rotate-y-180">
+                  <div class="card p-6 md:p-8 h-full bg-primary-600 dark:bg-primary-800 text-white flex flex-col items-center justify-center text-center">
+                    <h3 class="text-xl font-semibold mb-4">{person.backTitle}</h3>
+                    <p class="text-base m-2">{person.backDescription}</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          ))}
+
         </div>
       </div>
     </section>
+
   </main>
   <Footer />
 </Layout> 
+
+<style>
+ /* 3D Card Transformations */
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .preserve-3d {
+    transform-style: preserve-3d;
+    /* Se mantiene min-height para evitar problemas en móvil */
+    min-height: 400px;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  /* Touch device support for 3D cards */
+  @media (hover: none) {
+    .touch-action-card {
+      transition: transform 0.5s ease;
+    }
+    
+    /* Espaciado entre tarjetas en móvil */
+    .feature-card.perspective {
+      margin-bottom: 2.5rem;
+    }
+    
+    /* Sombra para tarjetas en móvil */
+    .feature-card.perspective .card {
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                  0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  /* Asegurar altura y posicionamiento de las tarjetas en móvil */
+  @media (max-width: 640px) {
+    .feature-card {
+      position: relative;
+      min-height: 280px;
+      margin-bottom: 2rem;
+      clear: both;
+      display: block;
+    }
+    
+    .card {
+      height: 100%;
+      position: relative;
+      overflow: visible;
+    }
+  }
+
+</style>
+
+<script>
+  // Store references to event listeners for cleanup
+  const cleanupFunctions: Array<() => void> = [];
+
+  // Function to initialize only 3D interactive cards
+  function initializeFeatures() {
+    initializeTouchCards();
+  }
+
+  // Add touch support for 3D cards
+  function initializeTouchCards() {
+    const cards = document.querySelectorAll('.feature-card.perspective');
+
+    cards.forEach(card => {
+      const cardInner = card.querySelector('.preserve-3d');
+
+      if (cardInner) {
+        const handleClick = () => {
+          if (window.matchMedia('(hover: none)').matches) {
+            cardInner.classList.toggle('rotate-y-180');
+          }
+        };
+
+        cardInner.addEventListener('click', handleClick);
+
+        // Add cleanup function
+        cleanupFunctions.push(() => {
+          cardInner.removeEventListener('click', handleClick);
+        });
+      }
+    });
+  }
+
+  // Initialize on initial load
+  document.addEventListener('DOMContentLoaded', initializeFeatures);
+
+  // Re-initialize on Astro page transitions
+  document.addEventListener('astro:page-load', initializeFeatures);
+
+  // Cleanup on Astro page swap
+  document.addEventListener('astro:before-swap', () => {
+    cleanupFunctions.forEach(cleanup => cleanup());
+    cleanupFunctions.length = 0;
+  });
+
+  // Fallback cleanup on window unload
+  window.addEventListener('unload', () => {
+    cleanupFunctions.forEach(cleanup => cleanup());
+  });
+</script>
+
