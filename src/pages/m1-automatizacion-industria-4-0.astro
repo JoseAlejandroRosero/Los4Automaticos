@@ -2,33 +2,18 @@
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
 ---
 
-<Layout title="Features - Impressive Animations & Experiences">
+<Layout title="Mep Mep Raiders - Módulo 1: Automatización e Industria 4.0" description="Explora el Módulo 1 de Mep Mep Raiders, donde se desarrollan diagramas de instrumentación del proceso, identificando sensores y actuadores clave, así como la arquitectura de control y sus comunicaciones. Integra tecnologías de Industria 4.0 como el gemelo digital y el IIoT.">
   <Header />
   <main>
-    <!-- Hero Section -->
-    <section class="relative overflow-hidden bg-linear-to-b from-primary-100 to-white dark:from-primary-950 dark:to-secondary-950 pt-24 md:pt-32 pb-16 md:pb-20">
-      <div class="absolute inset-0 z-0 opacity-30">
-        <div class="absolute inset-0 bg-grid-pattern"></div>
-      </div>
-      
-      <div class="container-custom relative z-10">
-        <div class="text-center max-w-3xl mx-auto px-4">
-          <h1 class="text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-6 text-gray-900 dark:text-white animate-slide-down">
-            Cutting-Edge <span class="text-accent-500">Features</span>
-          </h1>
-          <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
-            Explore our innovative features with interactive demonstrations and stunning visual effects.
-          </p>
-        </div>
-      </div>
-      
-      <!-- Animated Shapes -->
-      <div class="absolute -bottom-16 left-0 right-0 flex justify-center">
-        <div class="w-48 md:w-64 h-48 md:h-64 bg-accent-400 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
-      </div>
-    </section>
+
+    <HeroSection 
+      title="Módulo 1: Automatización e Industria 4.0" 
+      highlightText="Módulo 1:"
+      description="En este módulo se desarrollan los diagramas de instrumentación del proceso, identificando sensores y actuadores clave, así como la arquitectura de control y sus comunicaciones, incluyendo protocolos y niveles de automatización. Se integran tecnologías de Industria 4.0 como el gemelo digital y el IIoT, analizando su propósito, impacto y relación con la transformación digital industrial."
+    />
 
     <!-- Interactive Feature Cards -->
     <section class="section relative z-10 overflow-hidden py-12 md:py-16">
