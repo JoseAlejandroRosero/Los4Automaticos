@@ -7,8 +7,7 @@ const allPages = [
   { text: "M5 - Celdas de manufactura robotizadas", url: "/Mep_Mep_Raiders_web/m5-celdas-de-manufactura-robotizadas" },
   { text: "M6 - Virtualización de fábrica", url: "/Mep_Mep_Raiders_web/m6-virtualizacion-de-fabrica" },
   { text: "M7 - Controladores industriales", url: "/Mep_Mep_Raiders_web/m7-controladores-industriales" },
-  { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Raiders_web/m8-sistema-de-supervision-scada" },
-  { text: "Reflexiones", url: "/Mep_Mep_Raiders_web/reflexiones" }
+  { text: "M8 - Sistema de supevisión SCADA", url: "/Mep_Mep_Raiders_web/m8-sistema-de-supervision-scada" }
 ];
 ---
 <header class="fixed w-full bg-white/90 dark:bg-secondary-950/90 backdrop-blur-xs z-50 py-4 transition-colors duration-300">
@@ -31,7 +30,7 @@ const allPages = [
       <span class="ml-2 text-xl font-display font-semibold text-secondary-900 dark:text-white">Mep Mep Raiders</span>
     </a>
     
-    <nav class="hidden md:flex items-center space-x-8">
+    <nav class="hidden lg:flex items-center space-x-8">
       <!--
       <a href="/Mep_Mep_Riders_web/" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Inicio</a>
       -->
@@ -74,6 +73,8 @@ const allPages = [
           </div>
         </div>
       </div>
+
+      <a href="/Mep_Mep_Raiders_web/reflexiones" class="text-secondary-600 hover:text-primary-600 dark:text-secondary-300 dark:hover:text-primary-400 font-medium transition-colors">Reflexiones</a>
     </nav>
     
     <div class="flex items-center space-x-4">
@@ -94,13 +95,13 @@ const allPages = [
       <a href="#signup" class="hidden sm:inline-flex btn-primary">Empezemos</a>
       -->
       
-      <a href="/Mep_Mep_Raiders_web/" class="hidden sm:inline-flex btn-primary">Inicio</a>
+      <a href="/Mep_Mep_Raiders_web/" class="hidden lg:inline-flex btn-primary">Inicio</a>
       
       <!-- Mobile Menu Button and Dropdown -->
       <div x-data="{ open: false, showAllPages: false }">
         <button 
           @click="open = !open"
-          class="md:hidden p-2 rounded-md text-secondary-600 hover:text-secondary-900 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500"
+          class="lg:hidden p-2 rounded-md text-secondary-600 hover:text-secondary-900 dark:text-secondary-300 dark:hover:text-white focus:outline-hidden focus:ring-2 focus:ring-primary-500"
           aria-label="Toggle menu"
         >
           <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -123,6 +124,7 @@ const allPages = [
           x-cloak
         >
 
+          <a href="/Mep_Mep_Raiders_web/" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Inicio</a>
           <a href="/Mep_Mep_Raiders_web/presentacion" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Presentación</a>
           <a href="/Mep_Mep_Raiders_web/contacto" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Contáctenos</a>
           <a href="/Mep_Mep_Raiders_web/asignatura" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Asignatura</a>
@@ -150,6 +152,8 @@ const allPages = [
               </a>
             ))}
           </div>
+
+          <a href="/Mep_Mep_Raiders_web/reflexiones" class="block px-4 py-2 text-sm text-secondary-700 dark:text-secondary-300 hover:bg-secondary-100 dark:hover:bg-secondary-800">Reflexiones</a>
         </div>
       </div>
     </div>
