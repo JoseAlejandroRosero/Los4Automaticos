@@ -11,6 +11,15 @@ const footerLinks = [
     ]
   },
   {
+    title: "Reflexiones",
+    links: [
+      { text: "Gestión de Proyecto", url: "/Mep_Mep_Raiders_web/reflexiones" },
+      { text: "Trabajo Colaborativo", url: "/Mep_Mep_Raiders_web/reflexiones" },
+      { text: "Proceso de Aprendizaje", url: "/Mep_Mep_Raiders_web/reflexiones" },
+      { text: "Recomendaciones", url: "/Mep_Mep_Raiders_web/reflexiones" }
+    ]
+  },
+  {
     title: "Módulos",
     links: [
       { text: "M1 - Automatización e industria 4.0", url: "/Mep_Mep_Raiders_web/m1-automatizacion-industria-4-0" },
@@ -24,12 +33,11 @@ const footerLinks = [
     ]
   }
 ];
-
 ---
 
 <footer class="bg-gray-900 text-white pt-16 pb-8">
   <div class="container-custom">
-    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+    <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-4 mb-12">
       <div class="md:col-span-2 lg:col-span-2">
         <a href="/Mep_Mep_Raiders_web/" class="flex items-center mb-6" aria-label="Go to homepage">
           <svg class="h-8 w-auto text-primary-400" viewBox="0 0 40 40" fill="currentColor">
@@ -67,14 +75,14 @@ const footerLinks = [
         }
 
         return (
-          <div key={column.title}>
+          <div key={column.title}  class=" min-w-[80px]">
             {/* Título siempre visible */}
             <h3 class="text-lg font-semibold mb-4">{column.title}</h3>
 
             {/* Version para md+: grupos en columnas lado a lado */}
-            <div class="hidden md:flex md:space-x-10">
+            <div class="hidden md:flex md:space-x-8">
               {chunkedLinks.map((group, idx) => (
-                <ul key={idx} class="space-y-2 flex-4 min-w-[180px] max-w-lg">
+                <ul key={idx} class="space-y-2 flex-4 min-w-[180px] max-w-md">
                   {group.map((link) => (
                     <li key={link.url}>
                       <a href={link.url} class="text-gray-400 hover:text-primary-400 transition-colors">
