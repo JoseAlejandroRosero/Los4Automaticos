@@ -40,39 +40,21 @@ import HeroSection from '../components/HeroSection.astro';
 
     -->
 
-    <!-- VSM Nuevo -->
     <section class="section bg-gray-50 dark:bg-gray-800/50 relative overflow-hidden py-12 md:py-16">
       <div class="container-custom">
-        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
-          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
-            Interactive Demo
-          </span>
-          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Experience Our Technology</h2>
-          <p class="text-gray-600 dark:text-gray-300">
-            Try our interactive demo to see how our features can transform your digital experience.
-          </p>
-        </div>
-        
-        <div class="interactive-demo bg-white dark:bg-secondary-900 rounded-xl shadow-xl overflow-hidden mx-4 sm:mx-auto">
-          <div class="demo-header bg-secondary-100 dark:bg-secondary-800 p-3 md:p-4 flex items-center">
-            <div class="flex space-x-2 mr-3 md:mr-4">
-              <div class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-red-500"></div>
-              <div class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-yellow-500"></div>
-              <div class="w-2.5 h-2.5 md:w-3 md:h-3 rounded-full bg-green-500"></div>
-            </div>
-            <div class="flex-1 bg-white dark:bg-secondary-700 rounded-full h-6 md:h-8 flex items-center px-3 md:px-4 text-xs md:text-sm text-gray-500 dark:text-gray-300">
-              demo.example.com
-            </div>
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Diagramas
+            </span>
+            <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Diagramas de instrumentación</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              El sistema de automatización implementado en la planta cuenta con una instrumentación precisa que permite la supervisión y control de cada etapa del proceso. En los gabinetes eléctricos se han identificado sensores como sensores fotoeléctricos difusos (SICK WTB4-3P1361), utilizados para la detección de piezas en las bandas transportadoras, y sensores de temperatura y humedad para el monitoreo ambiental. Como actuadores se incluyen contactores, resistencias calefactoras, lámparas piloto, balizas acústicas y motores eléctricos controlados mediante relés y salidas digitales del PLC. <br>
+              Cada sección de la planta tiene su propio conjunto de dispositivos. Por ejemplo, los sensores fotoeléctricos están distribuidos a lo largo de la línea para garantizar la detección precisa de productos. Las señales de entrada provenientes de estos sensores son canalizadas a tarjetas de entradas digitales, mientras que las señales de salida hacia actuadores como balizas y lámparas son gestionadas por tarjetas de salidas digitales.
+            </p>
           </div>
-          <div class="demo-content p-6 md:p-8 h-64 md:h-96 flex items-center justify-center relative">
-            <div class="text-center">
-              <h3 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white">Interactive Canvas</h3>
-              <p class="text-sm md:text-base text-gray-600 dark:text-gray-300 mb-4 md:mb-6">Tap or drag anywhere in this area to create visual effects</p>
-              <button id="demo-button" class="btn-primary text-sm md:text-base px-4 py-2 md:px-6 md:py-3">
-                Activate Demo
-              </button>
-            </div>
-            <canvas id="demo-canvas" class="absolute inset-0 w-full h-full pointer-events-none opacity-50"></canvas>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/c4922647-4400-454a-8a6d-b1f6bd2138f9" alt="Diagrama en blanco" class="w-full h-auto" />
           </div>
         </div>
       </div>
@@ -83,83 +65,24 @@ import HeroSection from '../components/HeroSection.astro';
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
           <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-400 font-medium text-sm mb-4">
-            Comparison
+            Comunicaciones
           </span>
-          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">How We Compare</h2>
-          <p class="text-gray-600 dark:text-gray-300">
-            See how our features stack up against the competition with our interactive comparison chart.
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Arquitectura de control y comunicaciones utilizadas</h2>
+          <p class="text-gray-600 dark:text-gray-300 text-left">
+            La arquitectura de control del sistema ha sido diseñada siguiendo un enfoque jerárquico conforme a la pirámide de automatización industrial, y se estructura en tres niveles. En el nivel de campo se ubican los elementos encargados de la interacción directa con el proceso físico, como los sensores fotoeléctricos difusos SICK WTB4-3P1361, que permiten la detección de objetos en movimiento sobre las bandas transportadoras. También se encuentran en este nivel los motores eléctricos trifásicos SEW-EURODRIVE DRN, que se encargan de generar el movimiento mecánico de las líneas de transporte, así como diversos actuadores de señalización y bornas distribuidas para la correcta conexión, protección y canalización de señales tanto analógicas como digitales.<br>
+            El nivel de control está conformado por un sistema modular basado en la plataforma B&R Automation X90. El corazón del sistema es el controlador principal X90CP174.48-00, responsable de ejecutar la lógica de control, supervisar el proceso y gestionar las comunicaciones con los dispositivos de campo y los sistemas superiores. Este controlador se complementa con módulos de expansión como las tarjetas X90DI110.10-00 para entradas digitales, X90RO440.05-00 para salidas digitales, X90AT910.08-00 para entradas analógicas en corriente y X90AO410.04-00 para salidas analógicas. Esta configuración permite una implementación flexible y escalable, adaptable a los requerimientos específicos de cada etapa del proceso.
           </p>
-        </div>
-        
-        <div class="comparison-table-container overflow-x-auto -mx-4 px-4 pb-4">
-          <table class="comparison-table w-full border-collapse min-w-[640px]">
-            <thead>
-              <tr>
-                <th class="p-3 md:p-4 text-left bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white rounded-tl-lg">Feature</th>
-                <th class="p-3 md:p-4 text-center bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">Basic</th>
-                <th class="p-3 md:p-4 text-center bg-primary-100 dark:bg-primary-900/30 text-primary-900 dark:text-primary-100 font-bold">Premium</th>
-                <th class="p-3 md:p-4 text-center bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white rounded-tr-lg">Competitors</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="feature-row">
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 font-medium">3D Transformations</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Limited</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center bg-primary-50 dark:bg-primary-900/10">
-                  <span class="inline-flex items-center justify-center text-primary-600 dark:text-primary-400">
-                    <svg class="w-4 h-4 md:w-5 md:h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    Advanced
-                  </span>
-                </td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Basic</td>
-              </tr>
-              <tr class="feature-row">
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 font-medium">Parallax Effects</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">
-                  <svg class="w-5 h-5 mx-auto text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-                  </svg>
-                </td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center bg-primary-50 dark:bg-primary-900/10">
-                  <span class="inline-flex items-center justify-center text-primary-600 dark:text-primary-400">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    Multi-layer
-                  </span>
-                </td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Limited</td>
-              </tr>
-              <tr class="feature-row">
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 font-medium">Particle Animations</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Basic</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center bg-primary-50 dark:bg-primary-900/10">
-                  <span class="inline-flex items-center justify-center text-primary-600 dark:text-primary-400">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    Interactive
-                  </span>
-                </td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Static</td>
-              </tr>
-              <tr class="feature-row">
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 font-medium">Performance Optimization</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Limited</td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center bg-primary-50 dark:bg-primary-900/10">
-                  <span class="inline-flex items-center justify-center text-primary-600 dark:text-primary-400">
-                    <svg class="w-5 h-5 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-                    </svg>
-                    Advanced
-                  </span>
-                </td>
-                <td class="p-3 md:p-4 border-b border-gray-200 dark:border-gray-700 text-center">Moderate</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/932943bb-6582-4860-935b-483970fb0a02" alt="Tablero1" class="w-full h-auto" />
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 text-left">
+            En el nivel de supervisión se encuentra una HMI táctil de 5.7 pulgadas, modelo 4PPC70.0573-20W, que brinda al operador una interfaz gráfica para visualizar variables del proceso, introducir comandos manuales y recibir mensajes de alerta. Este nivel también incluye capacidades de acceso remoto mediante una red protegida por firewall y conectividad satelital, lo que garantiza un monitoreo seguro desde ubicaciones remotas y facilita tareas de diagnóstico y mantenimiento sin necesidad de presencia física en la planta.<br>
+            En cuanto a las comunicaciones industriales, el sistema utiliza una red mixta compuesta por tecnología Ethernet industrial y RS-485. La conexión entre los módulos del PLC, la HMI y los dispositivos de red se realiza mediante switches industriales NS-206AF, los cuales ofrecen cuatro puertos RJ-45 y dos puertos de fibra óptica multimodo tipo SC. Para la comunicación robusta y de largo alcance con sensores distribuidos o módulos remotos se emplea el protocolo RS-485, conectado directamente a los módulos del PLC. Además, el acceso a servicios en la nube y a plataformas de teleasistencia se realiza a través de un módem satelital de banda Ku, en conjunto con un firewall que garantiza la ciberseguridad mediante túneles VPN.<br>
+            Finalmente, el sistema integra diversos protocolos de comunicación para asegurar la compatibilidad y eficiencia operativa. Se utiliza Modbus RTU para la comunicación serial con dispositivos del nivel de campo, Ethernet/IP para la red principal entre dispositivos críticos como el PLC y la HMI, y protocolos propietarios de B&R como POWERLINK y Automation Runtime, que permiten una sincronización precisa, configuración automática de dispositivos y un alto nivel de integración en entornos de automatización industrial avanzados.
+          </p>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/f792224e-d98d-4caf-b7fb-a66c42ae2abc" alt="Tablero2" class="w-full h-auto" />
+          </div>
         </div>
       </div>
     </section>
@@ -168,21 +91,43 @@ import HeroSection from '../components/HeroSection.astro';
     <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto px-4">
-          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Ready to Experience the Future?</h2>
-          <p class="text-primary-100 mb-6 md:mb-8">
-            Join thousands of satisfied customers who have transformed their digital presence with our cutting-edge features.
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Tecnologías de Industria 4.0 y relación con la transformación digital</h2>
+          <p class="text-primary-100 mb-6 md:mb-8 text-left">
+            El diseño propuesto integra diversas tecnologías de la Industria 4.0 que fortalecen la capacidad de digitalización y mejora continua del proceso:<br>
+            Gemelo Digital (Modelo Ciberfísico): La planta ha sido modelada virtualmente en un entorno CAD, lo que permite simular, validar y ajustar el comportamiento del sistema antes de su implementación física. Esto facilita el mantenimiento predictivo y la mejora del diseño sin interrumpir la producción.<br>
+            IIoT (Internet Industrial de las Cosas): Se incorporan elementos conectados como sensores y actuadores con capacidad de transmisión de datos en tiempo real hacia plataformas de análisis o supervisión. Esto posibilita el diagnóstico remoto, el ajuste de parámetros y la recopilación de datos para análisis predictivos.<br>
+            Ambas tecnologías contribuyen al proceso de transformación digital industrial, permitiendo a la planta migrar de una operación tradicional hacia un entorno inteligente, flexible y adaptativo, en donde el análisis de datos y la interconectividad son claves para la toma de decisiones y la eficiencia operativa.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="#signup" class="btn-accent text-sm md:text-base px-4 py-2 md:px-6 md:py-3 w-full sm:w-auto">
-              Get Started Now
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                <path fill-rule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-            <a href="#demo" class="btn-outline bg-white/10 text-white border-white/20 hover:bg-white/20 text-sm md:text-base px-4 py-2 md:px-6 md:py-3 w-full sm:w-auto">
-              Schedule a Demo
-            </a>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/55170fd6-91ab-4f99-8161-de3631bafffa" alt="Planta" class="w-full h-auto" />
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-custom max-w-4xl">
+        <div class="container-custom">
+
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-8 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Módulo 1
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Links</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Documentación y recursos del módulo.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold mb-4 mt-4">Ver documentación</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M1_Automatizacion_e_industria_4.0"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Documentación del módulo en github
+          </a>
         </div>
       </div>
     </section>
