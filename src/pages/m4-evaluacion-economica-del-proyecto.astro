@@ -1830,6 +1830,913 @@ import HeroSection from '../components/HeroSection.astro';
           </table>
         </div>
     </section> 
+
+    <section class="section bg-linear-to-br from-secondary-400 to-secondary-600 dark:from-secondary-500 dark:to-secondary-800 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Caja
+          </span>
+        </div>
+
+        <div class="text-left max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Flujos de caja</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Se halló el flujo de caja a partir del cruce de:
+          </p>
+
+            <ul class="list-disc pl-6 text-base space-y-1">
+              <li>Costos de componentes</li>
+              <li>Gastos operacionales</li>
+              <li>Ventas proyectadas</li>
+              </li>
+            </ul>
+          
+          <p class="text-gray-600 dark:text-gray-300">
+            Adicionlmente, se asumió una tasa impositiva del 35%.
+          </p>
+        </div>
+
+        <div class="comparison-table-container overflow-x-auto mx-4 px-4 pb-4 mt-4">
+          <table class="comparison-table w-full border-collapse min-w-[640px]">
+            <thead class="bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">
+              <tr>
+                <th class="border px-2 py-1">AÑO</th>
+                <th class="border px-2 py-1">MES</th>
+                <th class="border px-2 py-1">VENTAS</th>
+                <th class="border px-2 py-1">COSTO DE VENTAS</th>
+                <th class="border px-2 py-1">GASTOS OPERACIONALES</th>
+                <th class="border px-2 py-1">INVERSIÓN</th>
+                <th class="border px-2 py-1">EBIT</th>
+                <th class="border px-2 py-1">IMPUESTOS</th>
+                <th class="border px-2 py-1">FC</th>
+                <th class="border px-2 py-1">FC Acumulado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-2 py-1">0</td>
+                <td class="border px-2 py-1">0</td>
+                <td class="border px-2 py-1">$ -</td>
+                <td class="border px-2 py-1">$ -</td>
+                <td class="border px-2 py-1">$ -</td>
+                <td class="border px-2 py-1">-$883.107.481,22</td>
+                <td class="border px-2 py-1">-$883.107.481,22</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">-$883.107.481,22</td>
+                <td class="border px-2 py-1">-$883.107.481,22</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$841.155.021,57</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$194.483.000,64</td>
+                <td class="border px-2 py-1">$68.069.050,23</td>
+                <td class="border px-2 py-1">$126.413.950,42</td>
+                <td class="border px-2 py-1">-$756.693.530,80</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$847.740.683,52</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$187.897.338,69</td>
+                <td class="border px-2 py-1">$65.764.068,54</td>
+                <td class="border px-2 py-1">$122.133.270,15</td>
+                <td class="border px-2 py-1">-$634.560.260,65</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$854.278.406,18</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$181.359.616,04</td>
+                <td class="border px-2 py-1">$63.475.865,61</td>
+                <td class="border px-2 py-1">$117.883.750,42</td>
+                <td class="border px-2 py-1">-$516.676.510,23</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$862.194.383,83</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$173.443.638,38</td>
+                <td class="border px-2 py-1">$60.705.273,43</td>
+                <td class="border px-2 py-1">$112.738.364,95</td>
+                <td class="border px-2 py-1">-$403.938.145,28</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$869.658.933,04</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$165.979.089,18</td>
+                <td class="border px-2 py-1">$58.092.681,21</td>
+                <td class="border px-2 py-1">$107.886.407,97</td>
+                <td class="border px-2 py-1">-$296.051.737,31</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">6</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$877.596.882,87</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$158.041.139,34</td>
+                <td class="border px-2 py-1">$55.314.398,77</td>
+                <td class="border px-2 py-1">$102.726.740,57</td>
+                <td class="border px-2 py-1">-$193.324.996,74</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">7</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$885.263.176,65</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$150.374.845,56</td>
+                <td class="border px-2 py-1">$52.631.195,95</td>
+                <td class="border px-2 py-1">$97.743.649,62</td>
+                <td class="border px-2 py-1">-$95.581.347,12</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">8</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$893.754.425,96</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$141.883.596,25</td>
+                <td class="border px-2 py-1">$49.659.258,69</td>
+                <td class="border px-2 py-1">$92.224.337,56</td>
+                <td class="border px-2 py-1">-$3.357.009,56</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">9</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$901.806.231,64</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$133.831.790,57</td>
+                <td class="border px-2 py-1">$46.841.126,70</td>
+                <td class="border px-2 py-1">$86.990.663,87</td>
+                <td class="border px-2 py-1">$83.633.654,31</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">10</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$909.216.849,13</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$126.421.173,08</td>
+                <td class="border px-2 py-1">$44.247.410,58</td>
+                <td class="border px-2 py-1">$82.173.762,50</td>
+                <td class="border px-2 py-1">$165.807.416,81</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">11</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$918.317.327,10</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$117.320.695,11</td>
+                <td class="border px-2 py-1">$41.062.243,29</td>
+                <td class="border px-2 py-1">$76.258.451,82</td>
+                <td class="border px-2 py-1">$242.065.868,63</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">12</td>
+                <td class="border px-2 py-1">$1.058.812.447,56</td>
+                <td class="border px-2 py-1">$927.142.154,07</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+                <td class="border px-2 py-1">-$36.570.610,41</td>
+                <td class="border px-2 py-1">$71.925.257,73</td>
+                <td class="border px-2 py-1">$25.173.840,21</td>
+                <td class="border px-2 py-1">$46.751.417,52</td>
+                <td class="border px-2 py-1">$288.817.286,16</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.193.451.906,86</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$289.554.514,82</td>
+                <td class="border px-2 py-1">$101.344.080,19</td>
+                <td class="border px-2 py-1">$188.210.434,63</td>
+                <td class="border px-2 py-1">$477.027.720,79</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.203.809.982,33</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$279.196.439,34</td>
+                <td class="border px-2 py-1">$97.718.753,77</td>
+                <td class="border px-2 py-1">$181.477.685,57</td>
+                <td class="border px-2 py-1">$658.505.406,36</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.213.944.044,38</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$269.062.377,30</td>
+                <td class="border px-2 py-1">$94.171.832,05</td>
+                <td class="border px-2 py-1">$174.890.545,24</td>
+                <td class="border px-2 py-1">$833.395.951,61</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.226.066.225,61</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$256.940.196,07</td>
+                <td class="border px-2 py-1">$89.929.068,62</td>
+                <td class="border px-2 py-1">$167.011.127,44</td>
+                <td class="border px-2 py-1">$1.000.407.079,05</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.237.577.461,12</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$245.428.960,56</td>
+                <td class="border px-2 py-1">$85.900.136,19</td>
+                <td class="border px-2 py-1">$159.528.824,36</td>
+                <td class="border px-2 py-1">$1.159.935.903,41</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">6</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.249.793.829,81</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$233.212.591,86</td>
+                <td class="border px-2 py-1">$81.624.407,15</td>
+                <td class="border px-2 py-1">$151.588.184,71</td>
+                <td class="border px-2 py-1">$1.311.524.088,12</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">7</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.261.625.811,82</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$221.380.609,85</td>
+                <td class="border px-2 py-1">$77.483.213,45</td>
+                <td class="border px-2 py-1">$143.897.396,40</td>
+                <td class="border px-2 py-1">$1.455.421.484,53</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">8</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.274.618.590,69</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$208.387.830,98</td>
+                <td class="border px-2 py-1">$72.935.740,84</td>
+                <td class="border px-2 py-1">$135.452.090,14</td>
+                <td class="border px-2 py-1">$1.590.873.574,66</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">9</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.287.079.337,67</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$195.927.084,00</td>
+                <td class="border px-2 py-1">$68.574.479,40</td>
+                <td class="border px-2 py-1">$127.352.604,60</td>
+                <td class="border px-2 py-1">$1.718.226.179,27</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">10</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.298.679.669,44</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$184.326.752,24</td>
+                <td class="border px-2 py-1">$64.514.363,28</td>
+                <td class="border px-2 py-1">$119.812.388,96</td>
+                <td class="border px-2 py-1">$1.838.038.568,22</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">11</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.312.553.228,38</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$170.453.193,30</td>
+                <td class="border px-2 py-1">$59.658.617,65</td>
+                <td class="border px-2 py-1">$110.794.575,64</td>
+                <td class="border px-2 py-1">$1.948.833.143,87</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">12</td>
+                <td class="border px-2 py-1">$1.508.524.248,88</td>
+                <td class="border px-2 py-1">$1.326.042.400,64</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+                <td class="border px-2 py-1">-$36.570.610,41</td>
+                <td class="border px-2 py-1">$120.393.410,62</td>
+                <td class="border px-2 py-1">$42.137.693,72</td>
+                <td class="border px-2 py-1">$78.255.716,90</td>
+                <td class="border px-2 py-1">$2.027.088.860,77</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.657.387.750,30</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$418.821.841,35</td>
+                <td class="border px-2 py-1">$146.587.644,47</td>
+                <td class="border px-2 py-1">$272.234.196,88</td>
+                <td class="border px-2 py-1">$2.299.323.057,65</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.673.133.451,75</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$403.076.139,89</td>
+                <td class="border px-2 py-1">$141.076.648,96</td>
+                <td class="border px-2 py-1">$261.999.490,93</td>
+                <td class="border px-2 py-1">$2.561.322.548,58</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.688.891.744,73</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$387.317.846,91</td>
+                <td class="border px-2 py-1">$135.561.246,42</td>
+                <td class="border px-2 py-1">$251.756.600,49</td>
+                <td class="border px-2 py-1">$2.813.079.149,07</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.706.888.181,20</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$369.321.410,45</td>
+                <td class="border px-2 py-1">$129.262.493,66</td>
+                <td class="border px-2 py-1">$240.058.916,79</td>
+                <td class="border px-2 py-1">$3.053.138.065,86</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.724.078.760,10</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$352.130.831,55</td>
+                <td class="border px-2 py-1">$123.245.791,04</td>
+                <td class="border px-2 py-1">$228.885.040,51</td>
+                <td class="border px-2 py-1">$3.282.023.106,37</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">6</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.742.289.252,48</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$333.920.339,16</td>
+                <td class="border px-2 py-1">$116.872.118,71</td>
+                <td class="border px-2 py-1">$217.048.220,46</td>
+                <td class="border px-2 py-1">$3.499.071.326,82</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">7</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.759.970.900,84</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$316.238.690,81</td>
+                <td class="border px-2 py-1">$110.683.541,78</td>
+                <td class="border px-2 py-1">$205.555.149,03</td>
+                <td class="border px-2 py-1">$3.704.626.475,85</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">8</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.779.245.377,05</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$296.964.214,60</td>
+                <td class="border px-2 py-1">$103.937.475,11</td>
+                <td class="border px-2 py-1">$193.026.739,49</td>
+                <td class="border px-2 py-1">$3.897.653.215,34</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">9</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.797.912.312,20</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$278.297.279,45</td>
+                <td class="border px-2 py-1">$97.404.047,81</td>
+                <td class="border px-2 py-1">$180.893.231,64</td>
+                <td class="border px-2 py-1">$4.078.546.446,98</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">10</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.815.446.010,14</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$260.763.581,51</td>
+                <td class="border px-2 py-1">$91.267.253,53</td>
+                <td class="border px-2 py-1">$169.496.327,98</td>
+                <td class="border px-2 py-1">$4.248.042.774,96</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">11</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.835.967.047,28</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$240.242.544,37</td>
+                <td class="border px-2 py-1">$84.084.890,53</td>
+                <td class="border px-2 py-1">$156.157.653,84</td>
+                <td class="border px-2 py-1">$4.404.200.428,79</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">12</td>
+                <td class="border px-2 py-1">$2.103.717.002,84</td>
+                <td class="border px-2 py-1">$1.855.959.240,39</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+                <td class="border px-2 py-1">-$36.570.610,41</td>
+                <td class="border px-2 py-1">$183.679.740,85</td>
+                <td class="border px-2 py-1">$64.287.909,30</td>
+                <td class="border px-2 py-1">$119.391.831,55</td>
+                <td class="border px-2 py-1">$4.523.592.260,34</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.280.753.254,08</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$594.286.541,16</td>
+                <td class="border px-2 py-1">$208.000.289,41</td>
+                <td class="border px-2 py-1">$386.286.251,75</td>
+                <td class="border px-2 py-1">$4.909.878.512,10</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.304.104.305,77</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$570.935.489,46</td>
+                <td class="border px-2 py-1">$199.827.421,31</td>
+                <td class="border px-2 py-1">$371.108.068,15</td>
+                <td class="border px-2 py-1">$5.280.986.580,25</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.326.472.356,60</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$548.567.438,63</td>
+                <td class="border px-2 py-1">$191.998.603,52</td>
+                <td class="border px-2 py-1">$356.568.835,11</td>
+                <td class="border px-2 py-1">$5.637.555.415,36</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.352.749.461,46</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$522.290.333,77</td>
+                <td class="border px-2 py-1">$182.801.616,82</td>
+                <td class="border px-2 py-1">$339.488.716,95</td>
+                <td class="border px-2 py-1">$5.977.044.132,31</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.377.967.067,33</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$497.072.727,90</td>
+                <td class="border px-2 py-1">$173.975.454,77</td>
+                <td class="border px-2 py-1">$323.097.273,14</td>
+                <td class="border px-2 py-1">$6.300.141.405,45</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">6</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.404.638.137,52</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$470.401.657,72</td>
+                <td class="border px-2 py-1">$164.640.580,20</td>
+                <td class="border px-2 py-1">$305.761.077,52</td>
+                <td class="border px-2 py-1">$6.605.902.482,97</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">7</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.430.590.125,36</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$444.449.669,88</td>
+                <td class="border px-2 py-1">$155.557.384,46</td>
+                <td class="border px-2 py-1">$288.892.285,42</td>
+                <td class="border px-2 py-1">$6.894.794.768,39</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">8</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.458.707.010,04</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$416.332.785,19</td>
+                <td class="border px-2 py-1">$145.716.474,82</td>
+                <td class="border px-2 py-1">$270.616.310,37</td>
+                <td class="border px-2 py-1">$7.165.411.078,76</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">9</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.486.150.711,26</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$388.889.083,98</td>
+                <td class="border px-2 py-1">$136.111.179,39</td>
+                <td class="border px-2 py-1">$252.777.904,58</td>
+                <td class="border px-2 py-1">$7.418.188.983,35</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">10</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.512.133.298,35</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$362.906.496,89</td>
+                <td class="border px-2 py-1">$127.017.273,91</td>
+                <td class="border px-2 py-1">$235.889.222,98</td>
+                <td class="border px-2 py-1">$7.654.078.206,32</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">11</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.541.994.340,21</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$333.045.455,02</td>
+                <td class="border px-2 py-1">$116.565.909,26</td>
+                <td class="border px-2 py-1">$216.479.545,76</td>
+                <td class="border px-2 py-1">$7.870.557.752,09</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">12</td>
+                <td class="border px-2 py-1">$2.904.739.636,77</td>
+                <td class="border px-2 py-1">$2.571.136.299,74</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+                <td class="border px-2 py-1">-$36.570.610,41</td>
+                <td class="border px-2 py-1">$267.332.885,09</td>
+                <td class="border px-2 py-1">$93.566.509,78</td>
+                <td class="border px-2 py-1">$173.766.375,31</td>
+                <td class="border px-2 py-1">$8.044.324.127,40</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.107.853.071,38</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$831.718.873,78</td>
+                <td class="border px-2 py-1">$291.101.605,82</td>
+                <td class="border px-2 py-1">$540.617.267,96</td>
+                <td class="border px-2 py-1">$8.584.941.395,35</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.141.967.949,61</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$797.603.995,55</td>
+                <td class="border px-2 py-1">$279.161.398,44</td>
+                <td class="border px-2 py-1">$518.442.597,11</td>
+                <td class="border px-2 py-1">$9.103.383.992,46</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.174.401.526,76</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$765.170.418,40</td>
+                <td class="border px-2 py-1">$267.809.646,44</td>
+                <td class="border px-2 py-1">$497.360.771,96</td>
+                <td class="border px-2 py-1">$9.600.744.764,42</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.212.226.232,39</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$727.345.712,77</td>
+                <td class="border px-2 py-1">$254.570.999,47</td>
+                <td class="border px-2 py-1">$472.774.713,30</td>
+                <td class="border px-2 py-1">$10.073.519.477,72</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.248.675.743,37</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$690.896.201,79</td>
+                <td class="border px-2 py-1">$241.813.670,63</td>
+                <td class="border px-2 py-1">$449.082.531,16</td>
+                <td class="border px-2 py-1">$10.522.602.008,88</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">6</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.287.172.055,68</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$652.399.889,48</td>
+                <td class="border px-2 py-1">$228.339.961,32</td>
+                <td class="border px-2 py-1">$424.059.928,16</td>
+                <td class="border px-2 py-1">$10.946.661.937,05</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">7</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.324.699.792,36</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$614.872.152,80</td>
+                <td class="border px-2 py-1">$215.205.253,48</td>
+                <td class="border px-2 py-1">$399.666.899,32</td>
+                <td class="border px-2 py-1">$11.346.328.836,37</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">8</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.365.146.962,17</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$574.424.982,99</td>
+                <td class="border px-2 py-1">$201.048.744,05</td>
+                <td class="border px-2 py-1">$373.376.238,94</td>
+                <td class="border px-2 py-1">$11.719.705.075,31</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">9</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.404.899.681,54</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$534.672.263,62</td>
+                <td class="border px-2 py-1">$187.135.292,27</td>
+                <td class="border px-2 py-1">$347.536.971,35</td>
+                <td class="border px-2 py-1">$12.067.242.046,66</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">10</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.442.770.074,69</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$496.801.870,47</td>
+                <td class="border px-2 py-1">$173.880.654,66</td>
+                <td class="border px-2 py-1">$322.921.215,80</td>
+                <td class="border px-2 py-1">$12.390.163.262,46</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">11</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.485.634.114,81</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1"></td>
+                <td class="border px-2 py-1">$453.937.830,35</td>
+                <td class="border px-2 py-1">$158.878.240,62</td>
+                <td class="border px-2 py-1">$295.059.589,73</td>
+                <td class="border px-2 py-1">$12.685.222.852,19</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">12</td>
+                <td class="border px-2 py-1">$3.972.297.678,41</td>
+                <td class="border px-2 py-1">$3.527.529.579,31</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+                <td class="border px-2 py-1">-$36.570.610,41</td>
+                <td class="border px-2 py-1">$375.471.755,44</td>
+                <td class="border px-2 py-1">$131.415.114,40</td>
+                <td class="border px-2 py-1">$244.056.641,04</td>
+                <td class="border px-2 py-1">$12.929.279.493,23</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-linear-to-br from-secondary-400 to-secondary-600 dark:from-secondary-500 dark:to-secondary-800 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Indicadores de viabilidad económica
+          </span>
+        </div>
+
+        <div class="text-left max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Indicadores económicos</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            El Costo Promedio Ponderado de Capital (WACC) se determinó con la siguiente formula:
+          </p>
+
+          <p class="text-gray-600 dark:text-gray-300">
+            WACC = (E / (E + D)) × Re + (D / (E + D)) × Rd × (1 - T)<br>
+            Donde:
+          </p>
+
+            <ul class="list-disc pl-6 text-base space-y-1">
+              <li>E = Valor del capital propio de la empresa = $1.324.661.222</li>
+              <li>D = Valor de la deuda = $883.107.481</li>
+              <li>Re = Rentabilidad esperada del capital propio = 10,00%</li>
+              <li>Rd = Tasa de interés de la deuda = 15,00%</li>
+              <li>T = Tasa impositiva = 35,00%</li>
+            </ul>
+          
+          <p class="text-gray-600 dark:text-gray-300">
+            De acuerdo con los anteriores valores tenemos que: <br>
+            WACC = Costo promedio ponderado de capital = 9,90%
+          </p>
+        </div>
+
+        <div class="comparison-table-container overflow-x-auto mx-4 px-4 pb-4 mt-4">
+          <table class="comparison-table w-full border-collapse min-w-[640px]">
+            <thead class="bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">
+              <tr >
+              <th class="border px-2 py-1 text-center">INDICADOR</th>
+              <th class="border px-2 py-1 text-center">VALOR</th>
+              <th class="border px-2 py-1 text-center">DESCRIPCIÓN</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="border px-2 py-1 text-center">VPN</td>
+              <td class="border px-2 py-1 text-center">$ 431.522.558</td>
+              <td class="border px-2 py-1">El Valor Presente Neto positivo (VPN &gt; 0) indica que el proyecto es financieramente viable, ya que genera valor adicional sobre el costo de capital.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">TIR</td>
+              <td class="border px-2 py-1 text-center">14%</td>
+              <td class="border px-2 py-1">La Tasa Interna de Retorno (TIR) superior al costo de capital (WACC) confirma que el proyecto es rentable, con un rendimiento mayor al mínimo esperado por los inversionistas.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">PAYBACK</td>
+              <td class="border px-2 py-1 text-center">8,04</td>
+              <td class="border px-2 py-1">Es el tiempo necesario para recuperar la inversión inicial a través de los flujos netos de caja generados por el proyecto. En este caso, el retorno se logra en 8,04 meses.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">ROI</td>
+              <td class="border px-2 py-1 text-center">1364%</td>
+              <td class="border px-2 py-1">El Retorno sobre la Inversión (ROI) muestra que por cada peso invertido, se generaron 13,64 pesos de utilidad neta, lo que representa un retorno excepcional.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">ROI anual</td>
+              <td class="border px-2 py-1 text-center">71%</td>
+              <td class="border px-2 py-1">El ROI anual busca normalizar el ROI total en una base anual, facilitando la comparación con otras inversiones en el tiempo.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">IR</td>
+              <td class="border px-2 py-1 text-center">1,49</td>
+              <td class="border px-2 py-1">La Relación Beneficio/Costo (Índice de Rentabilidad) mayor a 1 indica que el valor presente de los ingresos supera el de los costos, lo que hace al proyecto atractivo y rentable.</td>
+            </tr>
+            <tr>
+              <td class="border px-2 py-1 text-center">Margen de utilidad</td>
+              <td class="border px-2 py-1 text-center">15,33%</td>
+              <td class="border px-2 py-1">Significa que por cada $100 de ventas, la empresa retiene $15.33 como ganancia neta después de cubrir todos sus costos.</td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Módulo 4
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Links</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Documentación y recursos del módulo.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold mb-4">Archivos en PDF</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M4_Evaluacion_economica_de_proyecto/blob/main/Evaluaci%C3%B3n%20Economica%20final.pdf"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Ver ahora
+          </a>
+
+          <h2 class="text-2xl font-bold mb-4">Oferta comercial</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M4_Evaluacion_economica_de_proyecto/blob/main/OFERTA%20COMERCIAL.pdf"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Ver oferta comercial
+          </a>
+
+          <h2 class="text-2xl font-bold mb-4 mt-4">Ver documentación</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M4_Evaluacion_economica_de_proyecto?tab=readme-ov-file#%EF%B8%8F-3-costos-de-ensamblaje-por-patineta"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Documentación del módulo en github
+          </a>
+      </div>
+    </section>
   </main>
   <Footer />
 </Layout> 
