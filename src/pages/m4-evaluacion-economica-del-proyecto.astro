@@ -874,12 +874,6 @@ import HeroSection from '../components/HeroSection.astro';
           </ul>
         </div>
 
-        <div class="text-center mt-8">
-          <p class="text-gray-600 dark:text-gray-300 text-sm pb-16">
-            <strong>Nota</strong>: Los costos de ventas se estiman como el costo total de los componentes de la patineta multiplicado por un factor de 1.2 (para contemplar costos asociados a importación).
-          </p>
-        </div>
-
         <div class="comparison-table-container overflow-x-auto -mx-4 px-4 pb-4">
           <table class="comparison-table w-full border-collapse min-w-[640px]">
             <thead class="bg-gray-100 text-gray-700">
@@ -1505,8 +1499,337 @@ import HeroSection from '../components/HeroSection.astro';
       </div> 
     </section>
 
+    <section class="section bg-linear-to-br from-primary-200 to-primary-400 dark:from-primary-400 dark:to-primary-700 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Ventas
+          </span>
+        </div>
+
+        <div class="text-left max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Proyecciones de Ventas</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Para la cantidad de ventas esperadas, se utiliza los datos obtenidos en gestión de producción en base al estudio de mercado.
+          </p>
+
+          <h3 class="text-xl font-semibold mb-2">Supuestos</h3>
+            <ul class="list-disc pl-6 text-base space-y-1">
+              <li><strong>Tamaño inicial del mercado:</strong> 35.000 unidades</li>
+              <li><strong>Crecimiento del mercado:</strong> 5% anual</li>
+              <li><strong>Crecimiento de participación:</strong> 1% anual</li>
+              <li><strong>Distribución esperada de ventas:</strong>
+                <ul class="list-disc pl-6">
+                  <li>50% para modelo 500W</li>
+                  <li>25% para modelo 800W</li>
+                  <li>25% para modelo 2000W</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+
+          <div class="comparison-table-container overflow-x-auto mx-4 px-4 pb-4 mt-4">
+            <table class="comparison-table w-full border-collapse min-w-[640px]">
+              <thead class="bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">
+                <tr>
+                  <th class="border px-2 py-1">AÑO</th>
+                  <th class="border px-2 py-1">VOLUMEN<br>DEL MERCADO<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">PARTICIPACIÓN<br>EN EL MERCADO<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">VENTAS<br>ESPERADAS<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">VENTAS<br>ESPERADAS<br>(MENSUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>500W<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>800W<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>2000W<br>(ANUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>500W<br>(MENSUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>800W<br>(MENSUAL)</th>
+                  <th class="border px-2 py-1">PATINETA<br>2000W<br>(MENSUAL)</th>
+                </tr>
+              </thead>
+              <tbody class="text-center">
+                <tr>
+                  <td class="border px-2 py-1">1</td>
+                  <td class="border px-2 py-1">36.750</td>
+                  <td class="border px-2 py-1">5%</td>
+                  <td class="border px-2 py-1">1.838</td>
+                  <td class="border px-2 py-1">153</td>
+                  <td class="border px-2 py-1">919</td>
+                  <td class="border px-2 py-1">460</td>
+                  <td class="border px-2 py-1">460</td>
+                  <td class="border px-2 py-1">77</td>
+                  <td class="border px-2 py-1">38</td>
+                  <td class="border px-2 py-1">38</td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-1">2</td>
+                  <td class="border px-2 py-1">38.588</td>
+                  <td class="border px-2 py-1">6%</td>
+                  <td class="border px-2 py-1">2.315</td>
+                  <td class="border px-2 py-1">193</td>
+                  <td class="border px-2 py-1">1.158</td>
+                  <td class="border px-2 py-1">579</td>
+                  <td class="border px-2 py-1">579</td>
+                  <td class="border px-2 py-1">97</td>
+                  <td class="border px-2 py-1">48</td>
+                  <td class="border px-2 py-1">48</td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-1">3</td>
+                  <td class="border px-2 py-1">40.517</td>
+                  <td class="border px-2 py-1">7%</td>
+                  <td class="border px-2 py-1">2.836</td>
+                  <td class="border px-2 py-1">236</td>
+                  <td class="border px-2 py-1">1.418</td>
+                  <td class="border px-2 py-1">709</td>
+                  <td class="border px-2 py-1">709</td>
+                  <td class="border px-2 py-1">118</td>
+                  <td class="border px-2 py-1">59</td>
+                  <td class="border px-2 py-1">59</td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-1">4</td>
+                  <td class="border px-2 py-1">42.543</td>
+                  <td class="border px-2 py-1">8%</td>
+                  <td class="border px-2 py-1">3.403</td>
+                  <td class="border px-2 py-1">284</td>
+                  <td class="border px-2 py-1">1.702</td>
+                  <td class="border px-2 py-1">851</td>
+                  <td class="border px-2 py-1">851</td>
+                  <td class="border px-2 py-1">142</td>
+                  <td class="border px-2 py-1">71</td>
+                  <td class="border px-2 py-1">71</td>
+                </tr>
+                <tr>
+                  <td class="border px-2 py-1">5</td>
+                  <td class="border px-2 py-1">44.670</td>
+                  <td class="border px-2 py-1">9%</td>
+                  <td class="border px-2 py-1">4.020</td>
+                  <td class="border px-2 py-1">335</td>
+                  <td class="border px-2 py-1">2.010</td>
+                  <td class="border px-2 py-1">1.005</td>
+                  <td class="border px-2 py-1">1.005</td>
+                  <td class="border px-2 py-1">168</td>
+                  <td class="border px-2 py-1">84</td>
+                  <td class="border px-2 py-1">84</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
 
+        <div class="text-left max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Precio de venta</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            El precio de venta sin IVA de cada patineta se estableció como el 1,2 del costo de los componentes.
+          </p>
+
+          <h3 class="text-xl font-semibold mb-2">Supuestos</h3>
+            <ul class="list-disc pl-6 text-base space-y-1">
+              <li><strong>Tamaño inicial del mercado:</strong> 35.000 unidades</li>
+              <li><strong>Crecimiento del mercado:</strong> 5% anual</li>
+              <li><strong>Crecimiento de participación:</strong> 1% anual</li>
+              <li><strong>Distribución esperada de ventas:</strong>
+                <ul class="list-disc pl-6">
+                  <li>50% para modelo 500W</li>
+                  <li>25% para modelo 800W</li>
+                  <li>25% para modelo 2000W</li>
+                </ul>
+              </li>
+            </ul>
+        </div>
+
+        <div class="comparison-table-container overflow-x-auto mx-4 px-4 pb-4 mt-4">
+          <table class="comparison-table w-full border-collapse min-w-[640px]">
+            <thead class="bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">
+              <tr>
+                <th class="border px-2 py-1">AÑO</th>
+                <th class="border px-2 py-1">VOLUMEN DEL MERCADO</th>
+                <th class="border px-2 py-1">PARTICIPACIÓN EN EL MERCADO</th>
+                <th class="border px-2 py-1">VENTAS ESPERADAS</th>
+                <th class="border px-2 py-1">VENTAS ESPERADAS (MENSUAL)</th>
+                <th class="border px-2 py-1">PATINETA 500W</th>
+                <th class="border px-2 py-1">PATINETA 800W</th>
+                <th class="border px-2 py-1">PATINETA 2000W</th>
+                <th class="border px-2 py-1">PATINETA 500W (MENSUAL)</th>
+                <th class="border px-2 py-1">PATINETA 800W (MENSUAL)</th>
+                <th class="border px-2 py-1">PATINETA 2000W (MENSUAL)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">36.750</td>
+                <td class="border px-2 py-1">5%</td>
+                <td class="border px-2 py-1">1.838</td>
+                <td class="border px-2 py-1">153</td>
+                <td class="border px-2 py-1">919</td>
+                <td class="border px-2 py-1">460</td>
+                <td class="border px-2 py-1">460</td>
+                <td class="border px-2 py-1">77</td>
+                <td class="border px-2 py-1">38</td>
+                <td class="border px-2 py-1">38</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">38.588</td>
+                <td class="border px-2 py-1">6%</td>
+                <td class="border px-2 py-1">2.315</td>
+                <td class="border px-2 py-1">193</td>
+                <td class="border px-2 py-1">1.158</td>
+                <td class="border px-2 py-1">579</td>
+                <td class="border px-2 py-1">579</td>
+                <td class="border px-2 py-1">97</td>
+                <td class="border px-2 py-1">48</td>
+                <td class="border px-2 py-1">48</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">40.517</td>
+                <td class="border px-2 py-1">7%</td>
+                <td class="border px-2 py-1">2.836</td>
+                <td class="border px-2 py-1">236</td>
+                <td class="border px-2 py-1">1.418</td>
+                <td class="border px-2 py-1">709</td>
+                <td class="border px-2 py-1">709</td>
+                <td class="border px-2 py-1">118</td>
+                <td class="border px-2 py-1">59</td>
+                <td class="border px-2 py-1">59</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">42.543</td>
+                <td class="border px-2 py-1">8%</td>
+                <td class="border px-2 py-1">3.403</td>
+                <td class="border px-2 py-1">284</td>
+                <td class="border px-2 py-1">1.702</td>
+                <td class="border px-2 py-1">851</td>
+                <td class="border px-2 py-1">851</td>
+                <td class="border px-2 py-1">142</td>
+                <td class="border px-2 py-1">71</td>
+                <td class="border px-2 py-1">71</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">44.670</td>
+                <td class="border px-2 py-1">9%</td>
+                <td class="border px-2 py-1">4.020</td>
+                <td class="border px-2 py-1">335</td>
+                <td class="border px-2 py-1">2.010</td>
+                <td class="border px-2 py-1">1.005</td>
+                <td class="border px-2 py-1">1.005</td>
+                <td class="border px-2 py-1">168</td>
+                <td class="border px-2 py-1">84</td>
+                <td class="border px-2 py-1">84</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-linear-to-br from-primary-400 to-primary-600 dark:from-primary-500 dark:to-primary-800 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Costos
+          </span>
+        </div>
+
+        <div class="text-left max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Costos Operacionales</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Se calcularon los costos operativos anuales, los cuales incluyen:
+          </p>
+
+            <ul class="list-disc pl-6 text-base space-y-1">
+              <li><strong>Nómina</strong>  de 8 operarios (salario minimo legal vigente proyectado a 5 años, con prestaciones)</li>
+              <li><strong>Arriendo</strong> (se asume aumento del 10% anual)</li>
+              <li><strong>Servicios públicos</strong> ( se asume aumento del 10% anual)</li>
+              </li>
+            </ul>
+        </div>
+
+        <div class="comparison-table-container overflow-x-auto mx-4 px-4 pb-4 mt-4">
+          <table class="comparison-table w-full border-collapse min-w-[640px]">
+            <thead class="bg-secondary-100 dark:bg-secondary-800 text-gray-900 dark:text-white">
+              <tr>
+                <th class="border px-2 py-1">Año</th>
+                <th class="border px-2 py-1">Salario mínimo</th>
+                <th class="border px-2 py-1">Auxilio de transporte</th>
+                <th class="border px-2 py-1">Pensión</th>
+                <th class="border px-2 py-1">Salud</th>
+                <th class="border px-2 py-1">Nómina de un operario</th>
+                <th class="border px-2 py-1">Pago nómina 8 operarios</th>
+                <th class="border px-2 py-1">Arriendo</th>
+                <th class="border px-2 py-1">Servicios públicos</th>
+                <th class="border px-2 py-1">Total gastos operacionales</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border px-2 py-1">1</td>
+                <td class="border px-2 py-1">$1.557.389,60</td>
+                <td class="border px-2 py-1">$214.822,40</td>
+                <td class="border px-2 py-1">$62.295,58</td>
+                <td class="border px-2 py-1">$62.295,58</td>
+                <td class="border px-2 py-1">$1.896.803,17</td>
+                <td class="border px-2 py-1">$15.174.425,34</td>
+                <td class="border px-2 py-1">$7.000.000,00</td>
+                <td class="border px-2 py-1">$1.000.000</td>
+                <td class="border px-2 py-1">$23.174.425,34</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">2</td>
+                <td class="border px-2 py-1">$1.714.550,00</td>
+                <td class="border px-2 py-1">$238.014,40</td>
+                <td class="border px-2 py-1">$68.582,00</td>
+                <td class="border px-2 py-1">$68.582,00</td>
+                <td class="border px-2 py-1">$2.089.728,40</td>
+                <td class="border px-2 py-1">$16.717.827,20</td>
+                <td class="border px-2 py-1">$7.700.000,00</td>
+                <td class="border px-2 py-1">$1.100.000</td>
+                <td class="border px-2 py-1">$25.517.827,20</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">3</td>
+                <td class="border px-2 py-1">$1.821.500,00</td>
+                <td class="border px-2 py-1">$261.206,40</td>
+                <td class="border px-2 py-1">$72.860,00</td>
+                <td class="border px-2 py-1">$72.860,00</td>
+                <td class="border px-2 py-1">$2.228.426,40</td>
+                <td class="border px-2 py-1">$17.827.411,20</td>
+                <td class="border px-2 py-1">$8.470.000,00</td>
+                <td class="border px-2 py-1">$1.210.000</td>
+                <td class="border px-2 py-1">$27.507.411,20</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">4</td>
+                <td class="border px-2 py-1">$1.941.742,40</td>
+                <td class="border px-2 py-1">$284.398,40</td>
+                <td class="border px-2 py-1">$77.669,70</td>
+                <td class="border px-2 py-1">$77.669,70</td>
+                <td class="border px-2 py-1">$2.381.480,19</td>
+                <td class="border px-2 py-1">$19.051.841,54</td>
+                <td class="border px-2 py-1">$9.317.000,00</td>
+                <td class="border px-2 py-1">$1.331.000</td>
+                <td class="border px-2 py-1">$29.699.841,54</td>
+              </tr>
+              <tr>
+                <td class="border px-2 py-1">5</td>
+                <td class="border px-2 py-1">$2.147.246,53</td>
+                <td class="border px-2 py-1">$307.590,40</td>
+                <td class="border px-2 py-1">$85.889,86</td>
+                <td class="border px-2 py-1">$85.889,86</td>
+                <td class="border px-2 py-1">$2.626.616,66</td>
+                <td class="border px-2 py-1">$21.012.933,25</td>
+                <td class="border px-2 py-1">$10.248.700,00</td>
+                <td class="border px-2 py-1">$1.464.100</td>
+                <td class="border px-2 py-1">$32.725.733,25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    </section> 
   </main>
   <Footer />
 </Layout> 
