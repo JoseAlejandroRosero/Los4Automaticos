@@ -8,3 +8,12 @@
 ## Integrantes
 
 - **Jose Alejandro Rosero Rodriguez** - jaroseror@unal.edu.co
+- **Alejandro Bernal Rubiano** - *placeholer*
+- **Nicolas Mateo Guio Mestre** - *placeholder*
+- **Juan Diego Tovar Cardenas** - *placeholdder*
+
+Estudiantes de Ingeniería Mecatrónica
+Universidad Nacional de Colombia - Sede Bogotá
+Semetre 2025-II
+
+
