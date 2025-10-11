@@ -28,10 +28,10 @@
     <summary>  Tabla de Contenido</summary>
 
 <!-- TOC -->
-- [1. Presentación del proyecto](#1--presentación-del-proyecto)
-- [2. ¿Quiénes son los 4 Automáticos?](#2--quiénes-son-los-4-automaticos)
-- [3.󰈙 Documentación del proyecto](#3-️-documentación-del-proyecto)
-- [4.󰕳 Módulos de la materia](#4--módulos-de-la-materia)
+- [1.<i class="nf-fa-diagram_project"></i> Presentación del proyecto](#1--presentación-del-proyecto)
+- [2.<i class="nf-cod-organization"></i> ¿Quiénes son los 4 Automáticos?](#2--quiénes-son-los-4-automaticos)
+- [3.<i class="nf-cod-file_pdf"></i> Documentación del proyecto](#3-️-documentación-del-proyecto)
+- [4.<i class="nf-md-view_module"></i> Módulos de la materia](#4--módulos-de-la-materia)
 
 
 </details>
@@ -44,12 +44,12 @@
 </picture>
 </div>
 
-## 1.  Presentación del proyecto
+## 1. <i class="nf-fa-diagram_project"></i> Presentación del proyecto
 
 > **los 4 automáticos** es una empresa que se especializa en fabricar motorreductores sinfin corona, de engranajes cónicos y helicoidales.
 > Con una propuesta de automatización del proceso por celdas o células de fabricación. 
 
-## 2. ¿Quienes son los 4 Automáticos?
+## 2. <i class="nf-cod-organization"></i> ¿Quienes son los 4 Automáticos?
 
 <div align="center">
 <table>
@@ -79,13 +79,13 @@
 
 
 
-## 3.󰈙 Documentación del proyecto
+## 3. <i class="nf-cod-file_pdf"></i> Documentación del proyecto
 
-- 🌐 [**Página web**](https://JoseAlejandro.github.io//)
-- 🏢 [**Organización en github**](https://github.com/JoseAlejandroRosero)
-- 📁 [**Video de Sustentación del Proyecto**](https://folio-2021-7615b5.webflow.io) (Acceso con correo de dominio UNAL)
+- <i class="fa-solid fa-globe"></i> [**Página web**](https://JoseAlejandro.github.io//)
+- <i class="fa-brands fa-github"></i> [**Organización en github**](https://github.com/JoseAlejandroRosero/Los4Automaticos.github.io?tab=readme-ov-file)
+- <i class="fa-brands fa-youtube"></i> [**Video de Sustentación del Proyecto**](https://folio-2021-7615b5.webflow.io) (Acceso con correo de dominio UNAL)
 
-## 4.󰕳 Módulos del curso
+## 4.<i class="nf-md-view_module"></i> Módulos del curso
 
 1.  [Introducción a la Automatización en Manufactura](https://github.com/APM-2025-1/M1_Automatizacion_e_industria_4.0)
 2.  [Gestión y evaluación de la producción automatizada](https://github.com/APM-2025-1/M2_Gestion_de_produccion)
