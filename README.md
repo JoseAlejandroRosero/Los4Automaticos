@@ -9,13 +9,12 @@
 
 <h1>Proyecto integrador</h1>
 
-<h2>Mep Mep Raideres</h2>
+<h2>Los 4 Automáticos</h2>
 
-<h5>Joan Sebastian Arcila <br>
-    Juan Sebastian Daleman Martinez<br>
-    Daniel Santiago Muñoz Bernal<br>
-    Maria Alejandra Pérez Petro<br>
-    Emma Carolina Sarmiento Cabarcas</h5>
+<h5>Jose Alejandro Rosero<br>
+    Nicolas Mateo Guio Maestre<br>
+    Alejandro Bernal Rubiano<br>
+    Juan Diego Tovar Cárdenas</h5>
 
 <h6>Universidad Nacional de Colombia<br>
     Facultad de Ingeniería<br>
@@ -26,56 +25,53 @@
 
 
 <details>
-    <summary>🗂️ Tabla de Contenido</summary>
+    <summary>  Tabla de Contenido</summary>
 
 <!-- TOC -->
-- [1. 🤔 ¿Que es Mep Mep Raideres?](#1--que-es-mep-mep-raideres)
-  - [1.1. 👥 ¿Quienes integran Mep Mep Raiders?](#11--quienes-integran-mep-mep-raiders)
-- [2. 🗃️ Documentación del proyecto](#2-️-documentación-del-proyecto)
-- [3. 🧩 Módulos del curso](#3--módulos-del-curso)
+- [1. Presentación del proyecto](#1--presentación-del-proyecto)
+- [2. ¿Quiénes son los 4 Automáticos?](#2--quiénes-son-los-4-automaticos)
+- [3.󰈙 Documentación del proyecto](#3-️-documentación-del-proyecto)
+- [4.󰕳 Módulos de la materia](#4--módulos-de-la-materia)
 
 
 </details>
 
 <div align="center">
 <picture>
-    <source srcset="https://imgur.com/Q54gvNv.png" media="(prefers-color-scheme: dark)">
-    <source srcset="https://imgur.com/GAWEAAR" media="(prefers-color-scheme: light)">
-    <img src="https://imgur.com/GAWEAAR" alt="Logo Mep Mep Raiders" width="300px">
+    <source srcset="https://placehold.co/600x400.png" media="(prefers-color-scheme: light)">
+    <source srcset="https://placehold.co/600x400/000000/FFFFFF/png" media="(prefers-color-scheme: dark)">
+    <img src="https://placehold.co/600x400.png" alt="placeholder logo" width="400px">
 </picture>
 </div>
 
-## 1. 🤔 ¿Que es Mep Mep Raideres?
+## 1.  Presentación del proyecto
 
-Mep Mep Raiders es un proyecto que combina automatización industrial, fabricación digital y software especializado para la mejora del proceso de manufactura de vehiculos eléctricos de dos ruedas especializados en patinetas eléctricas.
+> **los 4 automáticos** es una empresa que se especializa en fabricar motorreductores sinfin corona, de engranajes cónicos y helicoidales.
+> Con una propuesta de automatización del proceso por celdas o células de fabricación. 
 
-### 1.1. 👥 ¿Quienes integran Mep Mep Raiders?
+## 2. ¿Quienes son los 4 Automáticos?
 
 <div align="center">
 <table>
   <tr>
     <td align="center">
-      <img src="https://imgur.com/CrHPMwd.png" alt="Joan Sebastian Arcila Cardozo" width="100px">
+      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Jose Alejandro Rosero Rodriguez" width="100px">
     </td>
     <td align="center">
-      <img src="https://imgur.com/Ofql8Ii.png" alt="Juan Sebastian Daleman Martinez" width="100px" >
+      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Alejandro Bernal Rubiano" width="100px">
     </td>
     <td align="center">
-      <img src="https://imgur.com/jJDkmhR.jpg" alt="Daniel Santiago Muñoz Bernal" width="100px">
+      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Nicolas Mateo Guio Maestre" width="100px">
     </td>
     <td align="center">
-      <img src="https://imgur.com/2XqwipR.png" alt="Maria Alejandra Pérez Petro" width="100px">
-    </td>
-    <td align="center">
-      <img src="https://imgur.com/oJPkQS3.png" alt="Emma Carolina Sarmiento Cabarcas" width="100px">
+      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Juan Diego tovar Cárdenas" width="100px" >
     </td>
   </tr>
   <tr>
-    <td align="center">Joan Sebastian Arcila Cardozo</td>
-    <td align="center">Juan Sebastian Daleman Martinez</td>
-    <td align="center">Daniel Santiago Muñoz Bernal</td>
-    <td align="center">Maria Alejandra Pérez Petro</td>
-    <td align="center">Emma Carolina Sarmiento Cabarcas</td>
+    <td align="center">Jose Alejandro Rosero Rodriguez</td>
+    <td align="center">Nicolas Mateo Guio Maestre</td>
+    <td align="center">Alejandro Bernal Rubiano</td>
+    <td align="center">Juan Diego Tovar Cárdenas</td>
   </tr>
 </table>
 </div>
@@ -83,19 +79,21 @@ Mep Mep Raiders es un proyecto que combina automatización industrial, fabricaci
 
 
 
-## 2. 🗃️ Documentación del proyecto
+## 3.󰈙 Documentación del proyecto
 
-- 🌐 [**Página web**](https://apm-2025-1.github.io/Mep_Mep_Raiders_web/)
-- 🏢 [**Organización en github**](https://github.com/APM-2025-1)
-- 📁 [**Drive**](https://drive.google.com/drive/folders/1jodLiu_ruLzrdddjylT_wBacmvlO2wKx?usp=drive_link) (Acceso con correo de dominio UNAL)
+- 🌐 [**Página web**](https://JoseAlejandro.github.io//)
+- 🏢 [**Organización en github**](https://github.com/JoseAlejandroRosero)
+- 📁 [**Video de Sustentación del Proyecto**](https://folio-2021-7615b5.webflow.io) (Acceso con correo de dominio UNAL)
 
-## 3. 🧩 Módulos del curso
+## 4.󰕳 Módulos del curso
 
-1. 🤖 [Automatización e industria 4.0](https://github.com/APM-2025-1/M1_Automatizacion_e_industria_4.0)
-2. 🏭 [Gestion de producción](https://github.com/APM-2025-1/M2_Gestion_de_produccion)
-3. 🗓️ [Planeación de proyecto](https://github.com/APM-2025-1/M3_Planeacion_de_proyecto)
-4. 💰 [Evaluación ecónomica de proyecto](https://github.com/APM-2025-1/M4_Evaluacion_economica_de_proyecto)
-5. 🦾 [Celdas de manufactura robotizadas](https://github.com/APM-2025-1/M5_Celdas_de_manufactura_robotizadas)
-6. 🖥️ [Virtualización de fábrica](https://github.com/APM-2025-1/M6_Virtualizacion_de_fabrica)
-7. 🧠 [Controladores industriales](https://github.com/APM-2025-1/M7_Controladores_industriales)
-8. 📡 [Sistema de supervisión SCADA](https://github.com/APM-2025-1/M8_Sistema_de_supervision_SCADA)
+1.  [Introducción a la Automatización en Manufactura](https://github.com/APM-2025-1/M1_Automatizacion_e_industria_4.0)
+2.  [Gestión y evaluación de la producción automatizada](https://github.com/APM-2025-1/M2_Gestion_de_produccion)
+3.  [Planeación y evaluación del proyecto](https://github.com/APM-2025-1/M3_Planeacion_de_proyecto)
+    1.  [Evaluación ecónomica de proyecto](https://github.com/APM-2025-1/M4_Evaluacion_economica_de_proyecto)
+4.  [Celdas de manufactura robotizadas](https://github.com/APM-2025-1/M5_Celdas_de_manufactura_robotizadas)
+5.  [Tecnologías modernas aplicadas a la Automatización](https://github.com/APM-2025-1/M5_Celdas_de_manufactura_robotizadas)
+    1.  [Virtualización de fábrica](https://github.com/APM-2025-1/M6_Virtualizacion_de_fabrica)
+6.  [Automatización Discreta](https://github.com/APM-2025-1/M7_Controladores_industriales)
+    1.  [Controladores Industriales](https://github.com/APM-2025-1/M8_Sistema_de_supervision_SCADA)
+    2.  [Sistema de supervisión SCADA](https://github.com/APM-2025-1/M8_Sistema_de_supervision_SCADA)
