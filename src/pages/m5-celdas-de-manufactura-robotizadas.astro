@@ -1,9 +1,69 @@
 ---
+---
 // Importamos los componentes base del sitio
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
+
+// 🔧 Definimos los arreglos usados en las secciones (aunque estén vacíos por ahora)
+const robots = [
+  {
+    robotName: "Robot ABB IRB 1600",
+    robotImage: "/images/robot1.png",
+    robotDescription: "Robot de 6 ejes utilizado para manipulación de piezas medianas con alta repetibilidad."
+  },
+  {
+    robotName: "Robot FANUC M-20iA",
+    robotImage: "/images/robot2.png",
+    robotDescription: "Modelo versátil para operaciones de carga y descarga en máquinas CNC."
+  }
+];
+
+const transporte = [
+  {
+    elementoName: "Transportador de rodillos motorizado",
+    elementoImage: "/images/transporte1.png",
+    elementoDescription: "Sistema que permite mover piezas entre estaciones con mínima intervención humana."
+  },
+  {
+    elementoName: "Palet automático",
+    elementoImage: "/images/transporte2.png",
+    elementoDescription: "Permite el almacenamiento temporal de piezas antes o después del procesamiento."
+  }
+];
+
+const sensoresActuadores = [
+  {
+    name: "Sensor inductivo de proximidad",
+    image: "/images/sensor1.png",
+    description: "Detecta la presencia de objetos metálicos sin contacto físico."
+  },
+  {
+    name: "Actuador neumático lineal",
+    image: "/images/actuador1.png",
+    description: "Controla el movimiento de pinzas o mecanismos de sujeción en la celda."
+  }
+];
+
+const elementosSeguridad = [
+  {
+    name: "Cortina de seguridad",
+    image: "/images/seguridad1.png",
+    description: "Detiene el funcionamiento del robot al detectar la intrusión de un operario."
+  },
+  {
+    name: "Parada de emergencia",
+    image: "/images/seguridad2.png",
+    description: "Permite interrumpir inmediatamente la energía del sistema ante una situación de riesgo."
+  },
+  {
+    name: "Cercado de protección",
+    image: "/images/seguridad3.png",
+    description: "Aísla la zona de trabajo del robot, evitando el acceso no autorizado."
+  }
+];
+---
 
 ---
 
