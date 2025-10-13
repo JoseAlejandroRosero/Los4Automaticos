@@ -81,8 +81,8 @@
 
 ## 3. Documentación del proyecto
 
--  [**Página web**](https://josealejandrorosero.github.io/Los4Automaticos/)
--  [**Organización en github**](https://github.com/JoseAlejandroRosero/Los4Automaticos)
+-  [**Página web**](https://JoseAlejandro.github.io//)
+-  [**Organización en github**](https://github.com/JoseAlejandroRosero/Los4Automaticos.github.io?tab=readme-ov-file)
 -  [**Video de Sustentación del Proyecto**](https://folio-2021-7615b5.webflow.io) (Acceso con correo de dominio UNAL)
 
 ## 4. Módulos del curso
