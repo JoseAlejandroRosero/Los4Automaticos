@@ -37,9 +37,8 @@ if (highlightText) {
           title
         )}
       </h1>
-      <p class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms">
-        {description}
-      </p>
+      <div class="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-6 md:mb-8 animate-slide-up" style="animation-delay: 200ms" set:html={description}></div>
+
     </div>
   </div>
   
