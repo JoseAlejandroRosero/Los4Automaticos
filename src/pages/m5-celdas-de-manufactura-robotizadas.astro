@@ -66,6 +66,61 @@ import HeroSection from '../components/HeroSection.astro';
     </section>
 
 
+    <!-- =========================
+     SECCIÓN - CRITERIOS CUANTITATIVOS PARA ELEGIR MODELO EXACTO
+    ========================== -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-10 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 text-primary-600 font-medium text-sm mb-4">
+            Selección del modelo de robot
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 text-gray-900 dark:text-white">
+            Criterios cuantitativos para elegir modelo exacto (resumen para toma de decisión)
+          </h2>
+        </div>
+    
+        <div class="max-w-4xl mx-auto text-gray-700 dark:text-gray-300 text-justify space-y-4 px-4">
+          <ul class="list-disc list-inside space-y-3">
+            <li>
+              <strong>Payload mínimo requerido:</strong> suma del peso de la pieza más el sistema de sujeción (usa un margen del 20–30 %). 
+              Si las piezas pesan entre 25–30 kg, elegir un robot con capacidad ≥ 35 kg de payload 
+              (por ejemplo, FANUC M-20). 
+              <a href="https://www.fanucamerica.com" target="_blank" class="text-primary-600 hover:underline">fanucamerica.com</a>
+            </li>
+    
+            <li>
+              <strong>Reach / enveloping:</strong> que permita servir la(s) máquina(s) objetivo y el área de palletizado; 
+              ideal entre 1–2 m dependiendo del layout (UR16e = 900 mm para celdas compactas). 
+              <a href="https://www.universal-robots.com" target="_blank" class="text-primary-600 hover:underline">universal-robots.com</a>
+            </li>
+    
+            <li>
+              <strong>Repetibilidad:</strong> menor a 0.1 mm para posicionamiento en máquina herramienta; 
+              esto es crítico para transferir directamente a un torno o fresadora. 
+              (Parámetro a confirmar en la ficha técnica del modelo).
+            </li>
+    
+            <li>
+              <strong>Protección ambiental:</strong> grado IP resistente a refrigerantes, polvo y pintura 
+              (importante para robots que trabajen cerca de procesos de pintura o arenado).
+            </li>
+    
+            <li>
+              <strong>Capacidad de integración:</strong> soporte de I/O, protocolos EtherNet/IP, PROFINET o EtherCAT 
+              para comunicación con PLC o CNC.
+            </li>
+    
+            <li>
+              <strong>Ciclos por minuto / disponibilidad:</strong> seleccionar robots con historial de rendimiento 
+              comprobado para aplicaciones de machine tending industrial.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
   </main>
   <Footer />
 </Layout> 
