@@ -20,6 +20,52 @@ import HeroSection from '../components/HeroSection.astro';
       </ul>`}
     />
     
+    <!-- =========================
+     SECCIÓN - PROCESOS SUSCEPTIBLES DE AUTOMATIZACIÓN
+    ========================== -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-10 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 text-primary-600 font-medium text-sm mb-4">
+            Módulo 5
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 text-gray-900 dark:text-white">Procesos susceptibles de automatización</h2>
+        </div>
+    
+        <div class="max-w-4xl mx-auto text-gray-700 dark:text-gray-300 text-justify space-y-6 px-4">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">1. Manipulación de piezas pesadas entre operaciones</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>
+              <strong>Problema:</strong> el montaje y desmontaje de piezas en las máquinas (mandrinado, fresado, rectificado, etc.) genera cuellos de botella por el peso de los engranajes y el tiempo de manipulación manual.
+            </li>
+            <li>
+              <strong>Automatización propuesta:</strong>
+              <ul class="list-disc list-inside ml-6 space-y-1">
+                <li>Uso de <strong>robots industriales de 6 ejes</strong> con <strong>grippers adaptativos o magnéticos</strong> para la carga/descarga de piezas en torno, fresadora, rectificadora, etc.</li>
+                <li>Los robots pueden ubicarse en <strong>celdas compartidas</strong> entre 2 o 3 máquinas CNC.</li>
+                <li>Implementar <strong>paletizado automático</strong> para el almacenamiento intermedio.</li>
+              </ul>
+            </li>
+          </ul>
+    
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">2. Transporte interno entre estaciones</h3>
+          <ul class="list-disc list-inside space-y-2">
+            <li>
+              <strong>Problema:</strong> transporte manual entre áreas (por ejemplo, del fresado a limpieza o pintura).
+            </li>
+            <li>
+              <strong>Automatización propuesta:</strong>
+              <ul class="list-disc list-inside ml-6 space-y-1">
+                <li>Incorporar <strong>AGVs (vehículos guiados automáticos)</strong> o <strong>AMRs (robots móviles autónomos)</strong> que trasladen bandejas o pallets entre estaciones.</li>
+                <li>Integración con el sistema de control de producción para asignación de rutas automáticas.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
   </main>
   <Footer />
 </Layout> 
