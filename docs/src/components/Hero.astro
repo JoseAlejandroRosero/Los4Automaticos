@@ -1,0 +1,90 @@
+---
+---
+<section class="relative pt-32 pb-20 md:pt-40 overflow-hidden hero-section">
+  <div class="container-custom relative z-10">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div class="slide-up" transition:animate="slide">
+        <h1 class="mb-6 text-secondary-900 dark:text-white leading-tight">
+          <span class="text-primary-600 dark:text-primary-400"> APM 2025-S1</span><br>Mep Mep Riders
+        </h1>
+        <p class="text-xl text-secondary-600 dark:text-secondary-200 mb-8 max-w-lg">
+          un proyecto que combina automatización industrial, fabricación digital y software especializado para la mejora del proceso de manufactura de vehiculos eléctricos de dos ruedas especializados en patinetas eléctricas.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="/Mep_Mep_Raiders_web/contacto" class="btn-primary">
+            Contactanos
+          </a>
+          <a href="#team" target="_blank" class="btn-outline flex items-center">
+            Equipo
+          </a>
+          <a href="https://github.com/APM-2025-1" target="_blank" class="btn-outline flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+            Repositorio
+          </a>
+        </div>
+      </div>
+      
+      <div class="relative fade-in" transition:animate="fade">
+        <div class="w-full max-w-lg mx-auto">
+          <!-- Imagen modo claro -->
+          <img src="https://imgur.com/GAWEAAR.png" alt="Hero Light" class="block dark:hidden w-full h-auto drop-shadow-xl border-0 border-secondary-700 rounded-md p-[5px]" />
+
+          <!-- Imagen modo oscuro -->
+          <img src="https://imgur.com/Q54gvNv.png" alt="Hero Dark" class="hidden dark:block w-full h-auto drop-shadow-xl border-0 border-secondary-300 rounded-md p-[5px]" />
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Teal section at the bottom with Trusted By -->
+  <div class="mt-10 w-full overflow-hidden -z-10" transition:animate="slide">
+    <div class="relative bg-info-200 dark:bg-info-300 py-12 md:py-16">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="text-3xl md:text-4xl font-bold text-black dark:text-black">
+              Automatización de la fabricación de <span class="tracking-wider text-violet-700 dark:text-violet-800">patinetas</span> de alta calidad.
+            </div>
+          </div>
+          
+          <div class="flex flex-col items-start md:items-end justify-center">
+            <p class="text-sm uppercase tracking-wider text-info-800 dark:text-info-900 font-medium mb-4">Con la confianza de</p>
+            <div class="flex flex-wrap justify-start md:justify-end gap-x-8 gap-y-4">
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">UNAL</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Sala CAM</span>
+              </div>
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">Laboratorio de Automatización de Máquinas</span>
+              </div>
+              <!-- 
+              <div class="h-8 flex items-center">
+                <span class="text-black dark:text-black font-medium">LabSir</span>
+              </div>
+            -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Add keyframes for additional animations if needed */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+  }
+  
+  /* Apply floating animation to the entire SVG container */
+  .fade-in svg {
+    animation: float 6s ease-in-out infinite;
+  }
+</style>

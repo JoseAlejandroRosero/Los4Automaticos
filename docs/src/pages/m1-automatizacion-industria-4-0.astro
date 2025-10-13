@@ -1,0 +1,136 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Mep Mep Raiders - Módulo 1: Automatización e Industria 4.0" description="Explora el Módulo 1 de Mep Mep Raiders, donde se desarrollan diagramas de instrumentación del proceso, identificando sensores y actuadores clave, así como la arquitectura de control y sus comunicaciones. Integra tecnologías de Industria 4.0 como el gemelo digital y el IIoT.">
+  <Header />
+  <main>
+
+    <HeroSection 
+      title="Módulo 1: Automatización e Industria 4.0" 
+      highlightText="Módulo 1:"
+      description="En este módulo se desarrollan los diagramas de instrumentación del proceso, identificando sensores y actuadores clave, así como la arquitectura de control y sus comunicaciones, incluyendo protocolos y niveles de automatización. Se integran tecnologías de Industria 4.0 como el gemelo digital y el IIoT, analizando su propósito, impacto y relación con la transformación digital industrial."
+    />
+    
+    <!-- VSM Viejito -->.
+    <!--
+    <section class="section relative z-10 overflow-hidden py-12 md:py-16">
+      <div class="container-custom">
+
+        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Pre-automatización
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Diagrama VSM</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Analisis de producción en la pre-automatización.
+          </p>
+        </div>
+
+        <div class="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+          padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+          border-radius: 8px; will-change: transform;">
+
+        </div> 
+      </div>
+    </section>
+
+    -->
+
+    <section class="section bg-gray-50 dark:bg-gray-800/50 relative overflow-hidden py-12 md:py-16">
+      <div class="container-custom">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+          <div>
+            <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Diagramas
+            </span>
+            <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Diagramas de instrumentación</h2>
+            <p class="text-gray-600 dark:text-gray-300 mb-4">
+              El sistema de automatización implementado en la planta cuenta con una instrumentación precisa que permite la supervisión y control de cada etapa del proceso. En los gabinetes eléctricos se han identificado sensores como sensores fotoeléctricos difusos (SICK WTB4-3P1361), utilizados para la detección de piezas en las bandas transportadoras, y sensores de temperatura y humedad para el monitoreo ambiental. Como actuadores se incluyen contactores, resistencias calefactoras, lámparas piloto, balizas acústicas y motores eléctricos controlados mediante relés y salidas digitales del PLC. <br>
+              Cada sección de la planta tiene su propio conjunto de dispositivos. Por ejemplo, los sensores fotoeléctricos están distribuidos a lo largo de la línea para garantizar la detección precisa de productos. Las señales de entrada provenientes de estos sensores son canalizadas a tarjetas de entradas digitales, mientras que las señales de salida hacia actuadores como balizas y lámparas son gestionadas por tarjetas de salidas digitales.
+            </p>
+          </div>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/c4922647-4400-454a-8a6d-b1f6bd2138f9" alt="Diagrama en blanco" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Comparison -->
+    <section class="section py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-accent-100 dark:bg-accent-900 text-accent-600 dark:text-accent-400 font-medium text-sm mb-4">
+            Comunicaciones
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Arquitectura de control y comunicaciones utilizadas</h2>
+          <p class="text-gray-600 dark:text-gray-300 text-left">
+            La arquitectura de control del sistema ha sido diseñada siguiendo un enfoque jerárquico conforme a la pirámide de automatización industrial, y se estructura en tres niveles. En el nivel de campo se ubican los elementos encargados de la interacción directa con el proceso físico, como los sensores fotoeléctricos difusos SICK WTB4-3P1361, que permiten la detección de objetos en movimiento sobre las bandas transportadoras. También se encuentran en este nivel los motores eléctricos trifásicos SEW-EURODRIVE DRN, que se encargan de generar el movimiento mecánico de las líneas de transporte, así como diversos actuadores de señalización y bornas distribuidas para la correcta conexión, protección y canalización de señales tanto analógicas como digitales.<br>
+            El nivel de control está conformado por un sistema modular basado en la plataforma B&R Automation X90. El corazón del sistema es el controlador principal X90CP174.48-00, responsable de ejecutar la lógica de control, supervisar el proceso y gestionar las comunicaciones con los dispositivos de campo y los sistemas superiores. Este controlador se complementa con módulos de expansión como las tarjetas X90DI110.10-00 para entradas digitales, X90RO440.05-00 para salidas digitales, X90AT910.08-00 para entradas analógicas en corriente y X90AO410.04-00 para salidas analógicas. Esta configuración permite una implementación flexible y escalable, adaptable a los requerimientos específicos de cada etapa del proceso.
+          </p>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/932943bb-6582-4860-935b-483970fb0a02" alt="Tablero1" class="w-full h-auto" />
+          </div>
+          <p class="text-gray-600 dark:text-gray-300 text-left">
+            En el nivel de supervisión se encuentra una HMI táctil de 5.7 pulgadas, modelo 4PPC70.0573-20W, que brinda al operador una interfaz gráfica para visualizar variables del proceso, introducir comandos manuales y recibir mensajes de alerta. Este nivel también incluye capacidades de acceso remoto mediante una red protegida por firewall y conectividad satelital, lo que garantiza un monitoreo seguro desde ubicaciones remotas y facilita tareas de diagnóstico y mantenimiento sin necesidad de presencia física en la planta.<br>
+            En cuanto a las comunicaciones industriales, el sistema utiliza una red mixta compuesta por tecnología Ethernet industrial y RS-485. La conexión entre los módulos del PLC, la HMI y los dispositivos de red se realiza mediante switches industriales NS-206AF, los cuales ofrecen cuatro puertos RJ-45 y dos puertos de fibra óptica multimodo tipo SC. Para la comunicación robusta y de largo alcance con sensores distribuidos o módulos remotos se emplea el protocolo RS-485, conectado directamente a los módulos del PLC. Además, el acceso a servicios en la nube y a plataformas de teleasistencia se realiza a través de un módem satelital de banda Ku, en conjunto con un firewall que garantiza la ciberseguridad mediante túneles VPN.<br>
+            Finalmente, el sistema integra diversos protocolos de comunicación para asegurar la compatibilidad y eficiencia operativa. Se utiliza Modbus RTU para la comunicación serial con dispositivos del nivel de campo, Ethernet/IP para la red principal entre dispositivos críticos como el PLC y la HMI, y protocolos propietarios de B&R como POWERLINK y Automation Runtime, que permiten una sincronización precisa, configuración automática de dispositivos y un alto nivel de integración en entornos de automatización industrial avanzados.
+          </p>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/f792224e-d98d-4caf-b7fb-a66c42ae2abc" alt="Tablero2" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto px-4">
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Tecnologías de Industria 4.0 y relación con la transformación digital</h2>
+          <p class="text-primary-100 mb-6 md:mb-8 text-left">
+            El diseño propuesto integra diversas tecnologías de la Industria 4.0 que fortalecen la capacidad de digitalización y mejora continua del proceso:<br>
+            Gemelo Digital (Modelo Ciberfísico): La planta ha sido modelada virtualmente en un entorno CAD, lo que permite simular, validar y ajustar el comportamiento del sistema antes de su implementación física. Esto facilita el mantenimiento predictivo y la mejora del diseño sin interrumpir la producción.<br>
+            IIoT (Internet Industrial de las Cosas): Se incorporan elementos conectados como sensores y actuadores con capacidad de transmisión de datos en tiempo real hacia plataformas de análisis o supervisión. Esto posibilita el diagnóstico remoto, el ajuste de parámetros y la recopilación de datos para análisis predictivos.<br>
+            Ambas tecnologías contribuyen al proceso de transformación digital industrial, permitiendo a la planta migrar de una operación tradicional hacia un entorno inteligente, flexible y adaptativo, en donde el análisis de datos y la interconectividad son claves para la toma de decisiones y la eficiencia operativa.
+          </p>
+          <div class="rounded-lg overflow-hidden shadow-xl border border-gray-200 dark:border-gray-700">
+            <img src="https://github.com/user-attachments/assets/55170fd6-91ab-4f99-8161-de3631bafffa" alt="Planta" class="w-full h-auto" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container-custom max-w-4xl">
+        <div class="container-custom">
+
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-8 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Módulo 1
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Links</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Documentación y recursos del módulo.
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-2xl font-bold mb-4 mt-4">Ver documentación</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M1_Automatizacion_e_industria_4.0"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Documentación del módulo en github
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

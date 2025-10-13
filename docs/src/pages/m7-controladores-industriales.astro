@@ -1,0 +1,149 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection.astro';
+---
+
+<Layout title="Mep Mep Raiders - Módulo 7: Controladores Industriales" description="Explora el desglose del problema de control secuencial en operaciones, etapas, transiciones y modos, con su implementación mediante lógica programada usando Grafcet y Ladder.">
+  <Header />
+  <main>
+    <HeroSection 
+      title="Módulo 7: Controladores Industriales" 
+      highlightText="Módulo 7:"
+      description="Este módulo explica el desglose del problema de control secuencial en operaciones, etapas, transiciones y modos, con su implementación mediante lógica programada usando Grafcet y Ladder."
+    />
+    
+    <section class="py-16 bg-white dark:bg-primary-800">
+      <div class="container-custom">
+        <div class="mb-24">
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Estructura del Proyecto</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                En el controlador PlantaAutomatizacion, se define una sola tarea <strong>(MainTask)</strong> que contiene el programa <strong>MainProgram</strong>, el cual tiene dos rutinas:
+              </p>
+
+              <ul class="list-disc pl-6 text-base space-y-2">
+                <li>
+                  <strong>GrafcetBandas:</strong> Contiene la lógica secuencial del movimiento de las bandas mediante diagramas de GRAFCET.
+                </li>
+                <li>
+                  <strong>MainRoutine:</strong> Lógica complementaria en lenguaje Ladder (LD), que interactúa con señales externas (como Google Assistant) y el variador de frecuencia PowerFlex 525.
+                </li>
+              </ul>
+            </div>
+
+            <div class="rounded-lg overflow-hidden shadow-xl">
+              <img src="https://imgur.com/RWISqlO.png" alt="Estructura" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="mb-24">
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div class="order-2 md:order-1 rounded-lg overflow-hidden shadow-xl">
+              <img src="https://imgur.com/CGGGOFZ.png" alt="Grafcet" class="w-full h-auto" />
+            </div>
+            <div class="order-1 md:order-2">
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Lógica en GRAFCET</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                Cada banda cuenta con una estructura típica compuesta por:
+              </p>
+              
+              <ul class="list-disc pl-6 text-base space-y-2">
+                <li>Un paso inicial (<code>Step_000</code>).</li>
+                <li>Un paso para activar el motor (<code>Step_001</code>, <code>Step_004</code>, etc.).</li>
+                <li>Un paso para detener el motor (<code>Step_002</code>, <code>Step_005</code>, etc.).</li>
+                <li>Condiciones de transición (<code>Tran_000</code>, <code>Tran_001</code>, etc.) asociadas a sensores de inicio y parada.</li>
+                <li>
+                  Acciones (<code>Action_000</code>, <code>Action_001</code>, etc.) que activan o desactivan las variables tipo <code>BOOL</code> (<code>Banda1</code>, <code>Banda2</code>, ..., <code>Banda7</code>) encargadas de arrancar o detener cada motor.
+                </li>
+                <li>
+                  El GRAFCET está diseñado de manera paralela, permitiendo ejecutar la lógica de todas las bandas simultáneamente sin interferencias. Esto se logra mediante un paso intermedio común (<code>Step_015</code>) que ramifica en múltiples caminos independientes.
+                </li>
+              </ul>
+
+              <div class="mt-6">
+                <h3 class="text-xl font-semibold mb-2">Ejemplo de lógica para una banda (Banda 1):</h3>
+                <ul class="list-disc pl-6 space-y-1">
+                  <li>
+                    <strong>Start:</strong> Si <code>StartBanda1</code> está activa y <code>StopBanda1</code> no lo está, se transiciona desde <code>Step_000</code> a <code>Step_001</code>, activando <code>Banda1</code>.
+                  </li>
+                  <li>
+                    <strong>Stop:</strong> Al cumplirse la condición de <code>StopBanda1</code>, se transiciona a <code>Step_002</code>, apagando la banda.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Case Study 3 -->
+        <div>
+          <div class="grid md:grid-cols-2 gap-12 items-center mb-12">
+            <div>
+              <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Lógica en Ladder (LD)</h2>
+              <p class="text-gray-600 dark:text-gray-300 mb-6">
+                La rutina <strong>MainRoutine</strong> contiene 6 rungs, entre ellos:
+              </p>
+              
+              <ul class="list-disc pl-6 text-base space-y-2">
+                <li>Activación de la banda 5 mediante Google Assistant (<code>Google_Str_Banda5</code>).</li>
+                <li>Desactivación por Google Assistant (<code>Google_Stp_Banda5</code>).</li>
+                <li>Envío de comando de frecuencia (<code>FreqCommand = 6000</code>) al variador <strong>PowerFlex 525</strong>.</li>
+                <li>Control manual mediante sensores <code>StartBanda5</code> y <code>StopBanda5</code>.</li>
+              </ul>
+
+              <p class="mt-4 text-base">
+                Estas señales externas están conectadas directamente a las salidas <code>Start</code> y <code>Stop</code> del variador <strong>Variador_141</strong>, permitiendo el control físico del motor correspondiente a la banda 5.
+              </p>
+
+              <p class="mt-4 text-base">
+                Se adjunta a este módulo:
+              </p>
+              <ul class="list-disc pl-6 text-base space-y-2">
+                <li>El archivo PDF del reporte generado desde <strong>Studio 5000 Logix Designer</strong>.</li>
+                <li>El archivo de código fuente del controlador en formato <code>.ACD</code>.</li>
+              </ul>
+
+              <p class="mt-4 text-base">
+                Estos documentos contienen el detalle completo de la configuración del proyecto, incluyendo la estructura de tareas, rutinas, variables, lógica GRAFCET y los diagramas en Ladder implementados en el sistema de control industrial.
+              </p>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-xl">
+              <img src="https://imgur.com/rBeAT8x.png" alt="Ladder" class="w-full h-auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-2 md:mb-16 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 dark:bg-primary-900 text-primary-600 dark:text-primary-300 font-medium text-sm mb-4">
+            Módulo 7
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 md:mb-2 text-gray-900 dark:text-white">Links</h2>
+          <p class="text-gray-600 dark:text-gray-300">
+            Documentación y recursos del módulo.
+          </p>
+        </div>
+
+       
+        <div class="max-w-4xl mx-auto">
+
+          <h2 class="text-2xl font-bold mb-4 mt-4">Ver documentación</h2>
+          <a 
+            href="https://github.com/APM-2025-1/M7_Controladores_industriales"
+            target="_blank"
+            rel="noopener"
+            class="inline-block bg-info-200 dark:bg-info-300 text-info-800 dark:text-info-900 px-6 py-3 rounded-lg shadow hover:bg-info-400 dark:hover:bg-info-600 transition">
+            Documentación del módulo en github
+          </a>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout> 
