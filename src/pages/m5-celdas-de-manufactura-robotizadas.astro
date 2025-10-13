@@ -170,6 +170,153 @@ import HeroSection from '../components/HeroSection.astro';
       </div>
     </section>
 
+    <!-- =========================
+     SECCIÓN - PELIGROS PRESENTES EN LA CELDA ROBOTIZADA
+    ========================== -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-10 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 text-primary-600 font-medium text-sm mb-4">
+            Análisis de riesgos
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 text-gray-900 dark:text-white">
+            Peligros presentes en la celda robotizada para motorreductores sinfín-corona
+          </h2>
+          <p class="italic text-gray-600 dark:text-gray-400">(Basado en ISO 10218-1, Anexo A)</p>
+        </div>
+    
+        <div class="max-w-5xl mx-auto space-y-10 px-4 text-gray-700 dark:text-gray-300">
+          <!-- 1. MECÁNICOS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <!-- Imagen -->
+            <img src="<!-- URL_IMAGEN_MECANICOS -->" alt="Peligros mecánicos" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <!-- Texto -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">1. Mecánicos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Atrapamiento entre el brazo del robot y estructuras fijas.</li>
+                <li>Golpes o contacto con el robot en movimiento durante mantenimiento.</li>
+                <li>Corte o cizallamiento por bordes de piezas metálicas o virutas.</li>
+                <li>Aplastamiento en mecanismos de carga/descarga o gripper defectuoso.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 2. ELÉCTRICOS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_ELECTRICOS -->" alt="Peligros eléctricos" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">2. Eléctricos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Contacto directo con bornes energizados del robot o CNC durante mantenimiento.</li>
+                <li>Descargas por aislamiento dañado en motores, sensores o cables expuestos.</li>
+                <li>Arcos eléctricos en tableros de potencia o variadores de frecuencia.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 3. TÉRMICOS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_TERMICOS -->" alt="Peligros térmicos" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">3. Térmicos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Riesgo de quemaduras por contacto con piezas calientes (tras mecanizado o rectificado).</li>
+                <li>Exposición a altas temperaturas en estaciones de tratamiento térmico o pintura.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 4. POR RUIDO -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_RUIDO -->" alt="Peligros por ruido" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">4. Por ruido</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Ruido generado por las máquinas CNC, compresores y conveyors (&gt;80 dB en operación continua).</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 5. POR VIBRACIONES -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_VIBRACIONES -->" alt="Peligros por vibraciones" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">5. Por vibraciones</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Transmisión de vibraciones a operarios cercanos por equipos de corte, rectificado o bombas neumáticas.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 6. POR RADIACIONES -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_RADIACIONES -->" alt="Peligros por radiaciones" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">6. Por radiaciones</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Radiación infrarroja (IR) en hornos o lámparas de secado.</li>
+                <li>Posible exposición a radiación UV en cabina de pintura con curado UV (si aplica).</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 7. POR SUSTANCIAS O MATERIALES PELIGROSOS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_SUSTANCIAS -->" alt="Sustancias peligrosas" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">7. Por sustancias o materiales peligrosos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Exposición a aerosoles o gases de pintura.</li>
+                <li>Contacto con refrigerantes o aceites de corte.</li>
+                <li>Polvo metálico o virutas finas en zonas de mecanizado.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 8. ERGONÓMICOS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_ERGONOMICOS -->" alt="Peligros ergonómicos" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">8. Ergonómicos</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Posturas forzadas durante mantenimiento del robot o cambio de herramienta.</li>
+                <li>Manipulación manual de componentes pesados fuera de la celda automatizada.</li>
+                <li>Movimientos repetitivos al cargar piezas de prueba o ajustar fixtures.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 9. ASOCIADOS AL ENTORNO -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_ENTORNO -->" alt="Peligros del entorno" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">9. Asociados al entorno</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Riesgo de resbalones por derrames de aceite o refrigerante.</li>
+                <li>Caídas por desniveles en el área de trabajo o mala iluminación.</li>
+                <li>Interferencia entre humanos, AGVs y robots móviles.</li>
+              </ul>
+            </div>
+          </div>
+    
+          <!-- 10. COMBINACIONES DE PELIGROS -->
+          <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+            <img src="<!-- URL_IMAGEN_COMBINADOS -->" alt="Combinaciones de peligros" class="w-40 h-40 object-cover rounded-xl shadow-md mx-auto md:mx-0" />
+            <div>
+              <h3 class="text-xl font-semibold text-gray-900 dark:text-white">10. Combinaciones de peligros</h3>
+              <ul class="list-disc list-inside space-y-1 mt-2">
+                <li>Atrapamiento + riesgo eléctrico durante tareas de mantenimiento.</li>
+                <li>Pérdida de control del robot por fallo eléctrico → impacto mecánico.</li>
+                <li>Calor + exposición a sustancias químicas en cabina de pintura.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
 
   </main>
   <Footer />
