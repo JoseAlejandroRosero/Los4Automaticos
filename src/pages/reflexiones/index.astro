@@ -37,13 +37,13 @@ const posts = [
 
 ---
 
-<Layout title="Reflexiones - Mep Mep Raiders" description="REflexiones sobre el proyecto Mep Mep Raiders, desarollo dl proyecto y aprendizajes.">
+<Layout title="Reflexiones - Los4Automaticos" description="REflexiones sobre el proyecto Los4Automaticos, desarollo dl proyecto y aprendizajes.">
   <Header />
   <main>
     <HeroSection 
-      title="Reflexiones sobre el Proyecto Mep Mep Raiders" 
+      title="Reflexiones sobre el Proyecto Los4Automaticos" 
       highlightText="Reflexiones"
-      description="En esta sección encontrarás reflexiones sobre el proyecto Mep Mep Raiders, incluyendo aprendizajes, desafíos y logros alcanzados durante su desarrollo."
+      description="En esta sección encontrarás reflexiones sobre el proyecto Los4Automaticos, incluyendo aprendizajes, desafíos y logros alcanzados durante su desarrollo."
     />
     
     <!-- Category Filter -->
@@ -53,7 +53,7 @@ const posts = [
       <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         {posts.map((post, index) => (
           <div class="card border border-gray-200 dark:border-gray-700 overflow-hidden slide-up" style={'animation-delay: ' + (index * 100) + 'ms'}>
-            <a href={'/Mep_Mep_Raiders_web/reflexiones/' + post.id} class="block">
+            <a href={'/Los4Automaticos/reflexiones/' + post.id} class="block">
               <img 
                 src={post.image} 
                 alt={post.title}
@@ -62,7 +62,7 @@ const posts = [
               />
             </a>
             <div class="p-6">
-              <a href={'/Mep_Mep_Raiders_web/reflexiones/' + post.id} class="block mb-3">
+              <a href={'/Los4Automaticos/reflexiones/' + post.id} class="block mb-3">
                 <h2 class="text-xl font-semibold text-gray-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors">{post.title}</h2>
               </a>
               <p class="text-gray-600 dark:text-gray-300 mb-6">{post.excerpt}</p>

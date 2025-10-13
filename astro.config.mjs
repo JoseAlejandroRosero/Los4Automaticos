@@ -5,8 +5,8 @@ import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://apm-2025-1.github.io',
-  base: 'Mep_Mep_Raiders_web',
+  site: 'https://JoseAlejandroRosero.github.io',
+  base: '\Los4Automaticos',
   vite: {
     plugins: [tailwindcss()],
   },
