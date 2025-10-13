@@ -5,71 +5,58 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import HeroSection from '../components/HeroSection.astro';
 
-// Ejemplo de datos para cada sección (puedes ir cambiándolos)
-const robots = [
-  {
-    robotName: "Robot de ejemplo 1",
-    robotImage: "https://via.placeholder.com/300",
-    robotDescription: "Descripción breve del robot 1.",
-  },
-  {
-    robotName: "Robot de ejemplo 2",
-    robotImage: "https://via.placeholder.com/300",
-    robotDescription: "Descripción breve del robot 2.",
-  },
-];
-
-const transporte = [
-  {
-    elementoName: "Cinta transportadora",
-    elementoImage: "https://via.placeholder.com/300",
-    elementoDescription: "Elemento encargado de mover piezas o productos dentro de la celda.",
-  },
-  {
-    elementoName: "Fixture de sujeción",
-    elementoImage: "https://via.placeholder.com/300",
-    elementoDescription: "Dispositivo que asegura las piezas durante el proceso.",
-  },
-];
-
-const sensoresActuadores = [
-  {
-    name: "Sensor de presión",
-    image: "https://via.placeholder.com/300",
-    description: "Mide la presión en tiempo real para garantizar seguridad.",
-  },
-  {
-    name: "Actuador neumático",
-    image: "https://via.placeholder.com/300",
-    description: "Acciona herramientas mediante aire comprimido.",
-  },
-];
-
-const elementosSeguridad = [
-  {
-    name: "Cerca de seguridad",
-    image: "https://via.placeholder.com/300",
-    description: "Delimita el área de trabajo y evita el acceso no autorizado.",
-  },
-  {
-    name: "Botón de emergencia",
-    image: "https://via.placeholder.com/300",
-    description: "Permite detener el sistema inmediatamente en caso de peligro.",
-  },
-];
 ---
 
 <Layout title="Módulo 5: Celdas de Manufactura Robotizadas" description="Diseño y justificación de celdas robotizadas.">
   <Header />
   <main>
     <!-- =========================
-         SECCIÓN 1 - DESCRIPCIÓN
+         DESCRIPCIÓN
     ========================== -->
     <HeroSection 
       title="Módulo 5: Celdas de Manufactura Robotizadas" 
-      highlightText="Descripción"
       description="Este módulo aborda la justificación y diseño de una celda robotizada, considerando flujo de trabajo, seguridad e integración de sensores y actuadores. Aquí encontrarás una descripción general del sistema y sus componentes."
     />
+
+      <!-- =========================
+         SECCIÓN - PROCESOS SUSCEPTIBLES DE AUTOMATIZACIÓN
+    ========================== -->
+    <section class="py-16 bg-white dark:bg-gray-800">
+      <div class="container-custom">
+        <div class="text-center max-w-3xl mx-auto mb-10 px-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-100 text-primary-600 font-medium text-sm mb-4">
+            Módulo 5
+          </span>
+          <h2 class="text-2xl md:text-3xl mb-4 text-gray-900 dark:text-white">Procesos susceptibles de automatización</h2>
+        </div>
+    
+        <div class="max-w-4xl mx-auto text-gray-700 dark:text-gray-300 text-justify space-y-6 px-4">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">1. Manipulación de piezas pesadas entre operaciones</h3>
+          <p>
+            <strong>Problema:</strong> el montaje y desmontaje de piezas en las máquinas (mandrinado, fresado, rectificado, etc.) genera cuellos de botella por el peso de los engranajes y el tiempo de manipulación manual.
+          </p>
+    
+          <p><strong>Automatización propuesta:</strong></p>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Uso de robots industriales de 6 ejes con grippers adaptativos o magnéticos para la carga/descarga de piezas en torno, fresadora, rectificadora, etc.</li>
+            <li>Los robots pueden ubicarse en celdas compartidas entre 2 o 3 máquinas CNC.</li>
+            <li>Implementar paletizado automático para el almacenamiento intermedio.</li>
+          </ul>
+    
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white mt-8">2. Transporte interno entre estaciones</h3>
+          <p>
+            <strong>Problema:</strong> transporte manual entre áreas (por ejemplo, del fresado a limpieza o pintura).
+          </p>
+    
+          <p><strong>Automatización propuesta:</strong></p>
+          <ul class="list-disc list-inside space-y-2">
+            <li>Incorporar AGVs (vehículos guiados automáticos) o AMRs (robots móviles autónomos) que trasladen bandejas o pallets entre estaciones.</li>
+            <li>Integración con el sistema de control de producción para asignación de rutas automáticas.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
 
     <!-- =========================
          SECCIÓN 2 - ROBOTS
