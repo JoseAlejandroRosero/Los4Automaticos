@@ -14,7 +14,7 @@ const team = [
 		  lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
 		},
 		backTitle: "",
-		backDescription: "Encargado de",
+		backDescription: "Encargado de página web y herramientas de software",
 		image: "../images/Rosero.jpg",
 		color: "primary"
 	},
@@ -26,7 +26,7 @@ const team = [
 	      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
 	    },
 	    backTitle: "",
-	    backDescription: "Encargado de",
+	    backDescription: "Encargado de simulación de fábrica",
 	    image: "../images/Bernal.jpg",
 	    color: "primary"
 	  },
@@ -38,7 +38,7 @@ const team = [
 	      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
 	    },
 	    backTitle: "",
-	    backDescription: "Encargado de",
+	    backDescription: "Encargado de la parte económica",
 	    image: "../images/Guio.jpg",
 	    color: "primary"
 	  },
@@ -50,7 +50,7 @@ const team = [
 	      lugar: "de la facultad de Ingeniería Universidad Nacional de Colombia Sede Bogotá",
 	    },
 	    backTitle: "",
-	    backDescription: "Encargado de",
+	    backDescription: "Encargado de diseño de celdas",
 	    image: "../images/Tovar.jpeg",
 	    color: "primary"
 	  },
@@ -91,7 +91,13 @@ const team = [
                   </div>
                 </div>
 
-                
+                {/* Cara trasera */}
+                <div class="absolute inset-0 backface-hidden rotate-y-180">
+                  <div class="card p-6 md:p-8 h-full bg-primary-600 dark:bg-primary-800 text-white flex flex-col items-center justify-center text-center">
+                    <h3 class="text-xl font-semibold mb-4">{person.backTitle}</h3>
+                    <p class="text-base m-2">{person.backDescription}</p>
+                  </div>
+                </div>
 
               </div>
             </div>
