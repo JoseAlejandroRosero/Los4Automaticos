@@ -451,45 +451,10 @@ import HeroSection from '../components/HeroSection.astro';
         </tbody>
       </table>
     </div>
-    
-      <table class="w-full text-center border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden mb-8">
-        <thead class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100">
-          <tr>
-            <th class="p-3 border border-gray-300 dark:border-gray-700">HRN Total</th>
-            <th class="p-3 border border-gray-300 dark:border-gray-700">Riesgo</th>
-            <th class="p-3 border border-gray-300 dark:border-gray-700">Acción</th>
-          </tr>
-        </thead>
-        <tbody class="text-gray-800 dark:text-gray-200">
-          <tr class="bg-gray-50 dark:bg-gray-900">
-            <td class="p-2 border border-gray-300 dark:border-gray-700">0 – 5</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Despreciable</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">No son necesarias medidas adicionales a las actuales.</td>
-          </tr>
-          <tr class="bg-gray-100 dark:bg-gray-800">
-            <td class="p-2 border border-gray-300 dark:border-gray-700">6 – 20</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Bajo, pero existe posibilidad</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Medidas administrativas, señalización y EPP suficientes.</td>
-          </tr>
-          <tr class="bg-gray-50 dark:bg-gray-900">
-            <td class="p-2 border border-gray-300 dark:border-gray-700">21 – 50</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Medio, consideración importante</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Deben considerarse medidas de mitigación del riesgo.</td>
-          </tr>
-          <tr class="bg-gray-100 dark:bg-gray-800">
-            <td class="p-2 border border-gray-300 dark:border-gray-700">51 – 500</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Alto</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Importante dar prioridad a la instalación de medidas.</td>
-          </tr>
-          <tr class="bg-gray-50 dark:bg-gray-900">
-            <td class="p-2 border border-gray-300 dark:border-gray-700">&gt;500</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700">Muy alto – Inaceptable</td>
-            <td class="p-2 border border-gray-300 dark:border-gray-700 text-red-500 font-semibold">
-              Instalación de medidas de mitigación de riesgo urgentes.
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <p class="mt-6 text-sm text-gray-600 dark:text-gray-400 text-center">
+      <strong>Interpretación:</strong> HRN &lt; 0-5 (despreciable); 6-20 (bajo); 21-50 (medio); 51-500 (alto); >500 (muy alto)
+    </p>
+
     
       <h3 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-100">Lista de elementos de seguridad requeridos para la celda</h3>
     
