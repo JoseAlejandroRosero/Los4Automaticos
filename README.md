@@ -38,9 +38,9 @@
 
 <div align="center">
 <picture>
-    <source srcset="https://placehold.co/600x400.png" media="(prefers-color-scheme: light)">
-    <source srcset="https://placehold.co/600x400/000000/FFFFFF/png" media="(prefers-color-scheme: dark)">
-    <img src="https://placehold.co/600x400.png" alt="placeholder logo" width="400px">
+    <source srcset="../images/logo.jpg" media="(prefers-color-scheme: light)">
+    <source srcset="../images/logo.jpg" media="(prefers-color-scheme: dark)">
+    <img src="../images/logo.jpg" alt="logo" width="400px">
 </picture>
 </div>
 
@@ -55,16 +55,16 @@
 <table>
   <tr>
     <td align="center">
-      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Jose Alejandro Rosero Rodriguez" width="100px">
+      <img src="../images/Rosero.jpg" alt="Jose Alejandro Rosero Rodriguez" width="100px">
     </td>
     <td align="center">
-      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Alejandro Bernal Rubiano" width="100px">
+      <img src="../images/Bernal.jpg" alt="Alejandro Bernal Rubiano" width="100px">
     </td>
     <td align="center">
-      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Nicolas Mateo Guio Maestre" width="100px">
+      <img src="../images/Guio.jpg" alt="Nicolas Mateo Guio Maestre" width="100px">
     </td>
     <td align="center">
-      <img src="https://placehold.co/600x400/png?text=Selfie+here" alt="Juan Diego tovar Cárdenas" width="100px" >
+      <img src="../images/Tovar.jpg" alt="Juan Diego tovar Cárdenas" width="100px" >
     </td>
   </tr>
   <tr>
