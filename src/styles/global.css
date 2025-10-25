@@ -137,7 +137,7 @@
 }
 
 @utility btn-outline {
-  @apply btn border-2 border-secondary-300 dark:border-info-300 hover:bg-secondary-100 dark:hover:bg-secondary-200 text-secondary-900 dark:text-secondary-50;
+  @apply btn border-2 border-secondary-300 dark:border-info-300 hover:bg-secondary-100 dark:hover:bg-secondary-100 text-secondary-900 dark:text-secondary-50;
 }
 
 @utility container-custom {
