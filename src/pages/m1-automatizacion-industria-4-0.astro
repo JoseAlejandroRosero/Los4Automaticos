@@ -42,7 +42,7 @@ import HeroSection from '../components/HeroSection.astro';
 
     -->
 
-    <section class="section bg-gray-50 dark:bg-secondary-800/50 relative overflow-hidden py-12 md:py-16">
+    <section class="section bg-linear-to-b from-primary-200 to-primary-400 dark:from-primary-400 dark:to-primary-600 relative overflow-hidden py-12 md:py-16">
       <div class="container-custom">
         <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
           <div>
@@ -50,7 +50,7 @@ import HeroSection from '../components/HeroSection.astro';
             Diagramas
             </span>
             <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Pirámide de la Automatización</h2>
-            <p class="text-gray-600 dark:text-gray-300 mb-4">
+            <p class="text-gray-700 dark:text-gray-200 mb-4">
 			La norma ISA 95 define la pirámide de la automatización similar al diagrama que se observa en el diagrama. Los niveles de la pirámide se definen, de arriba hacia abajo, como:<br>
 			<ol>
 					<li>Business Planning and Logistics: La herramienta a usar es el ERP (Enterprise Resource Planning)</li>
@@ -69,14 +69,14 @@ import HeroSection from '../components/HeroSection.astro';
     </section>
 
     <!-- Feature Comparison -->
-    <section class="section py-12 md:py-16">
+    <section class="section bg-linear-to-b from-primary-400 to-primary-600 dark:from-primary-600 dark:to-primary-800 py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto mb-8 md:mb-16 px-4">
-          <span class="inline-block px-4 py-1 rounded-full bg-primary-300 dark:bg-primary-900 text-secondary-700 dark:text-secondary-700 font-medium text-sm mb-4">
+          <span class="inline-block px-4 py-1 rounded-full bg-primary-300 dark:bg-primary-900 text-secondary-700 dark:text-secondary-200 font-medium text-sm mb-4">
             Comunicaciones
           </span>
           <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-gray-900 dark:text-white">Arquitecturas de Comunicación y control preliminares</h2>
-          <p class="text-gray-600 dark:text-gray-300 text-left">
+          <p class="text-gray-700 dark:text-gray-200">
 		  Las comunicaciones son una de las partes más importantes si no es que la más importante de una planta automatizada. Pues si no hay comunicación no hay una adecuada coordinación de los sistemas y niveles de la pirámide vista anteriormente. Es por esto que escogemos conexiones por medio de ethernet/IP para asegurar una conexión rápida, robusta, segura y estable entre los niveles de planta, control y monitoreo y supervisión. Mientras que para la comunicación entre los niveles de monitoreo y supervisión y los niveles superiores como Gestionamiento de la operación de manufactura y planeamiento y logística de la empresa. Tendremos comunicación por medio de servicios en la Nube. Esto debido no sólo a la diferencia en el tiempo en que estos niveles manipularn información, sino también por la naturaleza y cantidad de datos manejados.<br>
 		  Para los niveles de planta y Control y manipulación se hace necesario tener un arquitectura de control capaz de manejar las variables y de mantener nuestros procesos en sus puntos más óptimos. Para ello tenemos  varias opciones preliminares de la aquitectura a usar:
 		  </p>
@@ -93,11 +93,11 @@ import HeroSection from '../components/HeroSection.astro';
     </section>
 
     <!-- Call to Action -->
-    <section class="section bg-linear-to-br from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-900 text-white py-12 md:py-16">
+    <section class="section bg-linear-to-b from-primary-600 to-primary-800 dark:from-primary-800 dark:to-primary-950 text-white py-12 md:py-16">
       <div class="container-custom">
         <div class="text-center max-w-3xl mx-auto px-4">
           <h2 class="text-2xl md:text-3xl mb-4 md:mb-6 text-white">Tecnologías de Industria 4.0 y relación con la transformación digital</h2>
-          <p class="text-primary-100 mb-6 md:mb-8 text-left">
+          <p class="text-primary-50 mb-6 md:mb-8 text-left">
             Se propone integrar la siguientes tecnologías de la industria 4.0 al proyecto con el objetivo de mejorar sus indicadores Clave de Desempeño (KPIs) <br>
 			Digital Twin (Modelo Ciberfísico): Al tener un sistema digitalizado pero que se puede comnuicar con el mundo físico, tenemos un sistema en el que se pueden realizar pruebas y observar cambios en los procesos antes de llevarlos a producción real, lo cual acelera la implementación de nuevas tecnologías y ahorra muchísimos costos.<br>
 			IIoT (Internet Industrial de las Cosas):  Utilizando dispositivos I/O, de sensórica y controladores con la capacidad de enviar datos de forma directa a los niveles de monitreamiento y supervisión. Lo que ayuda a circumnavegar uno de los desafíos de la automatización: Comunicar niveles distintos de la pirámide de  Automatización de manera rápida, eficiente y en tiempo real.<br>
