@@ -3,7 +3,7 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primary-50:  #d5b3cb;   /* muy claro, casi blanco con toque azul */
+  --color-primary-50:  #d5b3cb;   
   --color-primary-100: #c79ab9;
   --color-primary-200: #b981a8;
   --color-primary-300: #ab6897;
@@ -125,7 +125,7 @@
 }
 
 @utility btn-primary {
-  @apply btn bg-accent-400 hover:bg-accent-200 text-black shadow-md hover:shadow-lg dark:bg-accent-400 dark:hover:bg-accent-200;
+  @apply btn bg-primary-600 hover:bg-secondary-900 text-black hover:text-white shadow-md hover:shadow-lg dark:bg-accent-400 dark:hover:bg-secondary-100;
 }
 
 @utility btn-secondary {
@@ -137,7 +137,7 @@
 }
 
 @utility btn-outline {
-  @apply btn border-2 border-secondary-300 dark:border-info-300 hover:bg-secondary-100 dark:hover:bg-secondary-100 text-secondary-900 dark:text-secondary-50;
+  @apply btn border-2 border-secondary-300 dark:border-accent-300 hover:bg-secondary-100 dark:hover:bg-secondary-100 text-secondary-900 dark:text-secondary-50;
 }
 
 @utility container-custom {
